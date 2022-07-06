@@ -1,0 +1,13 @@
+First class with Dreamers batch
+###############################
+
+- website working(Browser, HTTP, client-server, rendering)
+
+- VSCode , 
+    Extensions(Live server, Auto rename, Auto close, ), 
+    shortcuts
+        formatting code - Alt + shift + f
+        alt + z 
+- Localhost and ports
+    localhost and prt: 127.0.0.1:5500
+- CLI (ls, mkdir,rmdir, File paths(., .., /), rm)
