@@ -1,0 +1,51 @@
+CSS Part 1: Box Model, Display, Position
+########################################
+
+Box Model 
+    width
+    height
+    margin
+    padding
+    border
+    box-sizing
+    How to study Box Model in Chrome Dev Tools?
+
+Display
+    block
+    inline
+    flex 
+    grid 
+
+Position
+    static (default)
+    fixed
+    sticky
+    relative
+    absolute
+
+
+Important points
+################
+
+Q: What's the difference between div and span?
+A: 
+    1. Div is block(takes complete width) and span is inline (takes only content width and stays on the same line)
+
+    2. You can apply widhth and height to div but you cannot on span
+
+
+Q: How can we position a div in center using maring?
+A: using marign: auto
+
+
+Q: What's the purpose of this piece of CSS code?
+    
+    * {
+        box-sizing: border-box;
+    }
+
+A: To make sure that all the HTML elements do not exceed their allocated width/height because of padding, border.
+
+
+Q: what's the difference between display:none and visibility: hidden?
+A: display:none remove the element and doesn't take up any space wheras visibility: hidden just makes the element hidden but still occupies the complete space.
