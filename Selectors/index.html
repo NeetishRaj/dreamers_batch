@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Group and tag selector */
+         /* p, div {
+            border: 1px solid red;
+         } */
+         /* or */
+         /* p {
+            border: 1px solid red;
+         }
+
+         div {
+            border: 1px solid red;
+         }  */
+
+         /* class selector */
+         /* .container {
+            border: 1px solid red;
+         } */
+
+         /* ID selector */
+         /* #para {
+            border: 1px solid red;
+         } */
+
+
+         /* children combinator */
+         body div {
+            /* select all the divs inside body            */
+            /* border: 1px solid red; */
+         }
+
+        /* Immediate child combinator */
+        body > div {
+            /* select only the immediate div childs inside body            */
+            /* border: 1px solid red; */
+
+        }
+
+        /* Immediate sibling selector */
+        .container + div {
+            /* border: 1px solid red; */
+        }
+
+
+        /* all siblings selector */
+        .container ~ div {
+            /* border: 1px solid red; */
+        }
+
+        /* div:hover {
+            border: 1px solid red;
+        } */
+
+        :root {
+            /* background-color: red; */
+        }
+
+        /* div:first-child {
+            border: 1px solid red;
+        } */
+
+        div:last-child {
+            /* border: 1px solid red; */
+        }
+
+        p:only-child {
+            /* border: 1px solid red; */
+        }
+
+        div:nth-child(2) {
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>
+            <p>this is a paragraph</p>
+            <p>this is also a paragraph</p>
+        </div>
+        <div>
+            <p id="para">Paragraph with id para</p>
+        </div>
+        <div>Div 3</div>
+        <div>Div 4</div>
+        <div>Div 5</div>
+        <div>Div 6</div>
+        <div>Div 7</div>
+        <div>Div 8</div>
+        <div>Div 9</div>
+        <div>Div 10</div>
+    </div>
+
+    <div>
+        First Sibling Div
+    </div>
+
+    <div>
+        Second Sibling Div
+    </div>
+    
+</body>
+</html>
