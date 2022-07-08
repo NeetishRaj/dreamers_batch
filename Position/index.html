@@ -16,22 +16,39 @@
             height: 200px;
             background-color: red;
             margin: 10px;
+            padding: 20px;
         }
 
         .secondDiv {
             position: fixed;
             background-color: darkred;
-            /* bottom: 20px;
-            right: 20px; */
+            bottom: 20px;
+            right: 20px;
             z-index: 1;
+        }
+
+        .thirdDiv {
+            border: 4px solid black;
+            position: relative;
+
+            top: 20px;
+            left: 200px;
+            z-index: -1;
+        }
+
+        .fourthDiv {
+            border: 5px solid blue;
+            position: sticky;
+            top: 0px;
+            left: 100px;
         }
     </style>
 </head>
 <body>
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque rem. Similique totam in sunt, doloremque eveniet perspiciatis ex laudantium velit est libero blanditiis sequi quam. Animi molestiae officia quod.</div>
-    <div class="secondDiv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque rem. Similique totam in sunt, doloremque eveniet perspiciatis ex laudantium velit est libero blanditiis sequi quam. Animi molestiae officia quod.</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque rem. Similique totam in sunt, doloremque eveniet perspiciatis ex laudantium velit est libero blanditiis sequi quam. Animi molestiae officia quod.</div>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque rem. Similique totam in sunt, doloremque eveniet perspiciatis ex laudantium velit est libero blanditiis sequi quam. Animi molestiae officia quod.</div>
+    <div class="secondDiv">Position Fixed</div>
+    <div class="thirdDiv"> Position Relative </div>
+    <div class="fourthDiv"> Position Sticky </div>
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque rem. Similique totam in sunt, doloremque eveniet perspiciatis ex laudantium velit est libero blanditiis sequi quam. Animi molestiae officia quod.</div>
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque rem. Similique totam in sunt, doloremque eveniet perspiciatis ex laudantium velit est libero blanditiis sequi quam. Animi molestiae officia quod.</div>
     <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, neque rem. Similique totam in sunt, doloremque eveniet perspiciatis ex laudantium velit est libero blanditiis sequi quam. Animi molestiae officia quod.</div>

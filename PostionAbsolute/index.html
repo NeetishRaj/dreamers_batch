@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        div.container {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+
+            margin: 100px;
+
+            position: relative;
+        }
+
+        div.child {
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            margin: 10px;
+        }
+
+        #absoluteDiv {
+            border: 2px solid blue;
+
+            position:absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 100;
+        }
+
+        #anotherAbsoluteDiv {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 101;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="child"></div>
+        <div class="child" id="anotherAbsoluteDiv"></div>
+        <div class="child" id="absoluteDiv">
+            <img src="./edge.png" width="50px" height="50px" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
