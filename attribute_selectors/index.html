@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+
+        /* Select all elements with class attribute */
+        [class] {
+            /* border: 2px solid red; */
+        }
+
+        /* Select all p elements with class attribute */
+        p[class] {
+            /* border: 2px solid red; */
+        }
+
+        /* Select all p elements with class attribute with value para*/
+        p[class="para"] {
+            /* border: 2px solid red; */
+        }
+
+        /* Select all p elements with class attribute containing one of the classes with value para*/
+        p[class~="para"] {
+            /* border: 2px solid red; */
+        }
+
+
+        /* Select all p elements with class attribute starting with value pa*/
+        p[class^="pa"] {
+            /* border: 2px solid red; */
+        }
+
+        /* Select all p elements with class attribute ending with value ph*/
+        p[class$="ph"] {
+            /* border: 2px solid red; */
+        }
+
+        /* Select all p elements with class attribute containing value gra*/
+        p[class*="gra"] {
+            border: 2px solid red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <p class="para">This is paragraph with class 'para'</p>
+        <p class="first para">This is paragraph with class 'first para'</p>
+        <p class="paragraph">This is paragraph with class 'paragraph'</p>
+        <p class="graph">This is paragraph with class 'graph'</p>
+        <p class="gra">This is paragraph with class 'gra'</p>
+        <p class="">This is paragraph with empty class</p>
+        <p>This is paragraph without any classes</p>
+    </div>
+</body>
+</html>

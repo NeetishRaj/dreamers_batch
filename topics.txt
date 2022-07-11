@@ -24,6 +24,7 @@ Pseudo classes (Complete list : https://developer.mozilla.org/en-US/docs/Web/CSS
     :nth-child(n)
     :nth-last-child(n)
     :not(selector)
+    :empty
     link related
         :link
         :active
@@ -35,7 +36,6 @@ Pseudo classes (Complete list : https://developer.mozilla.org/en-US/docs/Web/CSS
         :valid
         :checked
         :disabled
-        :empty
 
 Pseudo Elements ( Complete list : https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
     ::after
@@ -47,9 +47,9 @@ Pseudo Elements ( Complete list : https://developer.mozilla.org/en-US/docs/Web/C
 
 Attribute selectors
     [attribute]
-    [attribute=value]
-    [attribute~=value]
-    [attribute|=value]
-    [attribute^=value]
-    [attribute$=value]	
-    [attribute*=value]
+    [attribute=value] equal to
+    [attribute~=value] contains one among many
+    [attribute|=value] equal to OR starts with
+    [attribute^=value] starts with
+    [attribute$=value] ends with
+    [attribute*=value] contains

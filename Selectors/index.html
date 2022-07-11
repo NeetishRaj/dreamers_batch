@@ -8,6 +8,13 @@
             box-sizing: border-box;
         }
 
+        body {
+            padding: 20px;
+        }
+        div {
+            padding: 5px;
+        }
+
         /* Group and tag selector */
          /* p, div {
             border: 1px solid red;
@@ -76,9 +83,31 @@
             /* border: 1px solid red; */
         }
 
-        div:nth-child(2) {
+        div:nth-child(5) {
+            /* border: 1px solid red; */
+        }
+
+        /*Select all the even positioned divs*/
+        div:nth-child(2n) {
+            /* border: 1px solid red; */
+        }
+
+        /*Select all the odd positioned divs*/
+        div:nth-child(2n + 1) {
+            /* border: 1px solid red; */
+        }
+
+        div:nth-last-child(1) {
+            /* border: 1px solid red; */
+        }
+
+
+        /* Select all p element except the p tag with id "para" */
+        p:not(#para) {
             border: 1px solid red;
         }
+
+
 
     </style>
 </head>
