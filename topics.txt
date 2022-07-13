@@ -1,0 +1,59 @@
+CSS Part 3: Image CSS and Flexbox
+#################################
+
+CSS for Images
+    object-fit
+        cover
+        contain
+        fill
+    filter
+        blur(px)
+        brighttness(%)
+        contrast(%)
+        grayscale(%)
+        invert(%)
+        opacity(%)
+        saturate(%)
+        sepia(%)
+        hue-rotate(%)
+
+
+Flexbox
+    Concept of Container and Items
+    
+    CSS for Flexbox container
+        justify-content
+        align-Items
+        flex-direction
+        flex-wrap
+        flex
+        flex-flow (flex-direction + flex-wrap)
+        align-content (for controlling the look of multiple lines of items)
+    CSS for Flexbox items
+        order
+        align-self
+
+    Flexbox Froggy to revise the CSS Flexbox concepts
+      https://flexboxfroggy.com/
+
+
+
+
+Important Notes
+################################
+
+Q. Which image related CSS can we use to preserve aspect ratio of the image?
+
+A: We can use both 'object-fit:cover' and 'object-fit:contain'
+
+    cover - will do cropping but will fill up completely
+    contain - will not do cropping but image will be shrinked.
+
+
+
+Q. How to position an item in the center both vertically and horizontally using flexbox(display:flex) ?
+
+A. Use this CSS onto the Flexbox Container
+    display: flex;
+    justify-content: center;
+    align-items: center;

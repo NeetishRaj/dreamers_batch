@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container {
+            background-color: lightgrey;
+            /* height: 100vh; */
+        }
+
+        nav {
+            background-color: aquamarine;
+
+            width: 100vw;
+            height: 50px;
+            
+            position: fixed;
+            top: 0px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        nav > div {
+            margin-right: 30px;
+            background-color:azure;
+            padding: 6px;
+        }
+
+        aside.left-sidebar {
+            position: fixed;
+            left: 0px;
+            top: 50px;
+
+            width: 230px;
+            height: calc(100vh - 50px);
+
+            background-color:blanchedalmond;
+
+            padding: 20px;
+        }
+
+        main {
+            margin-top: 50px;
+            margin-left: 230px;
+
+            padding: 20px;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        header, footer {
+            background-color: burlywood;
+            
+            margin-left: 230px;
+            margin-top: 50px;
+
+            width: calc(100vw  - 230px);
+            height: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        aside.right-aside {
+            background-color:#77889988;
+
+            padding: 20px;
+            min-height: 80vh;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+           <div>About Us</div>
+           <div>Services</div>
+           <div>Contact</div>
+        </nav>
+
+        <aside class="left-sidebar">
+            <h3>Left Sidebar</h3>
+
+            <ul>
+                <li>First Link</li>
+                <li>Second Link</li>
+                <li>Third Link</li>
+            </ul>
+            
+        </aside>
+
+        <header>
+            <h1>This is a sample website</h1>
+        </header>
+        <main>
+            <div class="main-left-side">
+                <section>
+                    <article>
+                        <p>This is the content of the website</p>
+                    </article>
+                </section>
+    
+                <section>
+                    <article>
+                        <p>This is also the content of the website</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente rem dignissimos unde, temporibus ea quisquam culpa at illo voluptatibus necessitatibus excepturi in impedit odit praesentium qui architecto, cupiditate repellendus numquam.</p>
+    
+                    </article>
+                </section>
+            </div>
+
+            <div class="main-right-side">
+                <aside class="right-aside">
+                    <h3>Right Sidebar for showing ads</h3>
+
+
+                    <ul>
+                        <li>Ad 1</li>
+                        <li>Ad 2</li>
+                        <li>Ad 3</li>
+                        <li>Ad 4</li>
+                    </ul>
+                    
+                </aside>
+            </div>
+
+        </main>
+        <footer>
+            <p>This is the footer &copy;Dreamers batch</p>
+        </footer>
+        
+    </div>
+</body>
+</html>
