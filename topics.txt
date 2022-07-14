@@ -1,0 +1,73 @@
+CSS Part 4: Responsive CSS units 
+################################
+
+Responsive Design
+
+
+Viewport
+    concept
+    use of <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+CSS units
+    Absolute  units
+        px (most used)
+        in
+        cm
+        mm
+        pt
+
+    Relative units
+        % (relative to parent)
+        vw (viewport (screen) width)
+        vh (viewport (screen) height)
+        vmin (viewports smaller dimension i.e height or width)
+            for mobiles
+                100vmin = 100vw
+            for laptops
+                100vmin = 100vh
+        vmax (viewports larger dimension i.e height or width)
+            for mobiles
+                100vmin = 100vh
+            for laptops
+                100vmin = 100vw
+        em (relative to font-size of element)
+        rem (relative to font-size of root element)
+
+
+Media Queries
+    Media types
+        all
+        print
+        screen (relevant for us)
+        speech
+
+
+Immportant points
+##################
+
+
+Q. How can we make an existing website responsive?
+A. By doing these things
+    * We can use responsive units like %, vw, vh, em, rem
+    * We can use Flexbox or Gridbox to make the layout responsive.
+    * We can use Media Queries to write customised CSS for specific screen sizes
+    * Or we can use popular CSS libraries like Bootstrap to make the website responsive.
+
+Q. How to make a div as circle?
+A. border-radius: 50%;
+
+
+Q. Write media query for the following
+    i.  thin mobile devices
+    ii.  wide screens
+
+A.
+    thin mobile devices
+        @media only screen and (max-width: 480px) {
+            /*All the CSS for phones inside here*/
+        }
+    wide screens
+        @media only screen and (min-width: 1024px) {
+            /*All the CSS for wide screens inside here*/
+        }

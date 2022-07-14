@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            font-size: 20px;
+        }
+        .container {
+            width: 600px;
+            height: 100px;
+
+            padding: 5px;
+            margin: 20px;
+
+            background-color: red;
+        }
+
+        .container div {
+            /* height: 50px; */
+            background-color: green;
+        }
+        
+        .item1 {
+            width: 80%;
+        }
+
+        .item2 {
+            width: 50vw;
+
+            font-size: 3vw;
+        }
+
+        .item3 {
+            width: 10em; 
+            /* 10em = 100 px (10 * font-size of parent) */
+        }
+
+        .item4 {
+            width: 10rem;
+            /* 10rem = 200 px (10 * font-size of root element) */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item1">%</div>
+    </div>
+
+    <div class="container" style="width:50vw;">
+        <div class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem rerum.</div>
+    </div>
+
+    <div class="container" style="font-size:10px">
+        <div class="item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem rerum.</div>
+    </div>
+
+
+    <div class="container" >
+        <div class="item4" style="font-size:10px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem quidem rerum.</div>
+    </div>
+    
+</body>
+</html>
