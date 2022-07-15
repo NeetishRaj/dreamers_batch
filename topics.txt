@@ -1,0 +1,72 @@
+CSS Part 5: Transform, Transition and Animations (@keyframes)
+############################################################
+
+
+transform
+    translate
+        translateX
+        translateY
+        translateZ
+        translate3D
+    scale(x, y)
+        scaleX(x)
+        scaleY(y)
+        scaleZ(z)
+        scale3d(x, y, z)
+    rotate(angle)
+        rotateX(angle)
+        rotateY(angle)
+        roateZ(angle)
+        rotate3d(x, y, z, angle)
+    skew(x-angle, y-angle)
+        skewX(angle)
+        skewY(angle)
+    perspective(n)
+    matrix()
+
+transform-origin
+
+
+Transition
+    syntax 
+        transition: property|all duration timing-function delay
+    transition-delay
+    transition-duration
+    transition-property
+    transition-timing-function
+
+
+Animation @keyframes
+    syntax 
+        @keyframes animationname {keyframes-selector {css-styles;}}
+    animation
+        animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+    animation-name
+    animation-duration
+    animation-timing-function
+    animation-delay
+    animation-iteration-count
+    animation-direction
+    animation-fill-mode
+    animation-play-state
+
+
+In class assignments
+    button shake effects
+    tilted div background but not the text
+
+
+
+Imortant Notes
+###############
+
+Q. Does CSS transform functions affect box model properties?
+
+A. No, it doesn't. Therefore we can safely use them without affecting the spacing of other neighbouring elements.
+
+
+Q. How much transition-duration is ususally suggested for UI effects.?
+A. Usually 200 - 300ms works best.
+
+Q. When should we use % format in @keyframes instead of from-to format for animations?
+A. Whenever we want multiple steps in the animation.
