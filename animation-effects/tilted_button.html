@@ -16,12 +16,18 @@
         }
 
         button:hover {
-            animation: shake 0.3s ease-in-out 1;
+            animation: zoom_effect 1s ease-in-out 1 alternate;
         }
 
 
-        @keyframes identifier {
-            
+        @keyframes zoom_effect {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.2);
+            }
         }
 
         @keyframes shake {
