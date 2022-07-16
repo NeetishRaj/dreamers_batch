@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        :root {
+            --primary: #03071e;
+            --secondary: #edf2f4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        h1, h2 {
+            color: white;
+        }
+
+        body {
+            background-color: var(--primary);
+            color: var(secondary);
+            font-family: "Satisfy", cursive;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 768px;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+
+        .body-wrapper {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 5px;
+        }
+
+        section {
+            position: relative;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+
+        }
+
+        .parallax {
+            position: relative;
+            min-height: 300px;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-style: preserve-3d;
+            z-index: -1;
+        }
+
+        .parallax div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            background-position: center;
+            background-size: cover;
+            filter: contrast(1.2);
+            box-shadow: 0px 0px 8px rgb(255 255 255 / 70%);
+        }
+
+        .parallax h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .background {
+            transform: translateZ(-6px) scale(2) rotate(-5deg);
+            opacity: 0.6;
+        }
+
+        .foreground {
+            transform: translateZ(-5px) scale(1.5) rotate(2deg);
+            opacity: 0.8;
+            width: 50%;
+        }
+    </style>
+</body>
+
+<div class="body-wrapper">
+
+
+    <section class="container parallax">
+        <div class="background"
+            style="background-image: url('https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920')">
+        </div>
+        <div class="foreground"
+            style="background-image: url('https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920')">
+        </div>
+        <h2>Keep Scrolling</h2>
+    </section>
+
+    
+
+
+</div>
+
+</html>

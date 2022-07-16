@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="./styles.css"> -->
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            :root {
+                --community-bg: rgb(255, 253, 253);
+                --why-us-bg: rgba(85, 145, 142, 0.698);
+                --card-bg: rgb(15, 67, 66);
+                --common-padding: 20px;
+            }
+
+            body {
+                background-color: rgb(25, 43, 58);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100vh;
+
+                font-family: sans-serif;
+            }
+
+            .container {
+                border-radius: 11px;
+
+                height: 80vh;
+                width: 80vw;
+
+                display: flex;
+                flex-direction: column;
+
+                overflow: hidden;
+            }
+
+            .community {
+                background-color: var(--community-bg);
+
+                height: 50%;
+
+                text-align: center;
+
+                padding: var(--common-padding);
+                font-weight: 700;
+            }
+
+            .community-header {
+                color: rgb(27, 192, 178)
+            }
+
+            .community-sub-header {
+                color: rgb(102, 154, 33);
+                font-size: 1.3rem;
+            }
+
+            .community p {
+                color: rgb(176, 165, 192);
+                font-size: 1.1rem;
+            }
+
+            .card-details {
+                height: 50%;
+
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .card {
+                background-color: var(--card-bg);
+                width: 50%;
+                padding: var(--common-padding);
+
+                color: rgb(227, 239, 244);
+
+                text-align: center;
+            }
+
+            .card-header {
+                font-size: 1.2rem;
+
+            }
+
+            .card .price-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            .card .price {
+                font-size: 2.2rem;
+                font-weight: 700;
+            }
+
+            .card .per-month {
+                margin-left: 15px;
+                margin-top: 5px;
+            }
+
+            .card button {
+                background-color: rgb(103, 153, 0);
+                
+                color: rgb(227, 239, 244);
+                font-size: 1.3rem;
+                width: 50%;
+
+                border: none;
+                height: 50px;
+
+                border-radius: 11px;
+
+                margin-top: 20px;
+
+            }
+
+            .why-us {
+                background-color: var(--why-us-bg);
+
+                width: 50%;
+                padding: var(--common-padding);
+
+                color: rgb(227, 239, 244);
+
+                text-align: center;
+            }
+
+            .why-us p {
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="main">
+              <div class="container">
+
+                <div class="community">
+                  <h2 class="community-header">Join our community</h2>
+
+                  <h3 class="community-sub-header">30-day, hassle-free monkey back gurarantee</h3>
+
+                  <p>
+                    Gain accsess to full library to tutorials along with expert code reviews. Prefect for any developers who are serious about honing their skills.
+
+                  </p>
+                </div>
+
+                <div class="card-details">
+                  <div class="card">
+                    <p class="card-header">Monthly Subscription</p>
+
+                    <div class="price-container">
+                        <span class="price">$29</span>
+                        <span class="per-month">Per Month</span>
+                    </div>
+                    <p>Full access for less than $1 a day.</p>
+
+                    <button>Sign Up</button>
+                  </div>
+
+                  <div class="why-us">
+                    <h4 class="why-us-header">Why Us</h4>
+
+                    <p>Turorials by industry experts Peer & expert code review</p>
+                    <p>Coding exercises</p>
+                    <p>Access yo Our GitHub repos</p>
+                    <p>Community forum</p>
+                    <p>Flashcard decks</p>
+                        
+
+                  </div>
+                </div>
+              </div>
+          </div>
+    </body>
+</html>
