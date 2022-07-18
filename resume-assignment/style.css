@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+body {
+    background-color: lightgray;
+   display: flex;
+   justify-content: center;
+
+   -webkit-scrollbar: red yellow;
+}
+
+body::-webkit-scrollbar {
+    /* display: none; */
+    background-color: red;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: aqua;
+}
+
+.main-content {
+    display: grid;
+    min-height: 1000px;
+    width: 90%;
+    justify-content: center;
+
+    grid-template-columns: 300px 700px;
+
+    /* scrollbar-color: red yellow; */
+
+}
+
+
+.left-section {
+    background-color: red;
+}
+
+.right-section {
+    background-color: green;
+}

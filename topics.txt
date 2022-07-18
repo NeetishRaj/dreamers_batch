@@ -1,0 +1,53 @@
+ CSS Part 7: Grid and Bootstrap
+ ##############################
+
+
+ Grid
+    Reference link: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+    Grid concepts
+        Grid container
+        Grid item
+        Grid cell
+        Grid line
+        Grid track
+        Grid Area (consists of one or more neigbouring  cells)
+
+    Grid container properties
+        display: grid | inline-grid
+        grid-template-columns: 
+        grid-template-rows: 
+        grid-template-areas: 
+        grid-template: 
+
+
+    Grid item properties
+        grid-area
+
+
+Bootstrap
+    What it is?
+
+    How to use it?
+    https://getbootstrap.com/docs/4.4/getting-started/introduction/
+
+    Some bootstrap specific concepts.
+        Containers
+        Bootstrap grid
+
+    Some nice bootstrap exmaple codes to refer
+        https://getbootstrap.com/docs/5.2/examples
+
+
+
+Important points
+##################
+
+
+Q. How many columns are there in Bootstrap Grid?
+A. 12
+
+
+    
+
+    
