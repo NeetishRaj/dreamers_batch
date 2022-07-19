@@ -1,0 +1,42 @@
+Git, Github and doing Open source contribution
+##############################################
+
+References
+    Official Documentation: https://git-scm.com/doc
+    
+    Youtube Tutorial: https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR
+
+
+Git
+    History
+    Usecases
+        Track file changes
+        Going back in file History
+        Collaborating with many people on same project
+    Installation
+        Download Git for windows from here
+            https://git-scm.com/download/win
+    Git Config (Add name and email)      
+        git config --global user.name "John Doe"
+        git config --global user.email johndoe@example.com
+    Repository concept
+
+    Git stages
+        Modified
+        Staging
+        Commit
+
+    Branching
+        creating branches
+        merging branches
+
+
+Github 
+    Central online Repository
+    Easy collaboration
+    
+
+Doing Open Source contribution via Github
+    Creating and Merging Pull requests
+
+            
