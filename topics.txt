@@ -20,23 +20,54 @@ Git
         git config --global user.name "John Doe"
         git config --global user.email johndoe@example.com
     Repository concept
+		git init
+		.git folder
 
     Git stages
-        Modified
+        Untracked,Modified
         Staging
         Commit
 
     Branching
         creating branches
         merging branches
+		
+	.gitignore
 
 
 Github 
     Central online Repository
     Easy collaboration
+	
+	Code in Gihub
+		Push from Local machine
+		Pull from remote Github repository
     
 
 Doing Open Source contribution via Github
-    Creating and Merging Pull requests
+    
+	steps to collaborate
+	
+		1. Clone the repo in your machine
+		git clone https://github.com/NeetishRaj/NewWebsiteProject.git
+		
+		2. Create your own branch
+		git checkout -b "Alok-branch"
+		
+		3. Add the file changes in that branch and commit them
+		
+		4. Push your branch to github
+		git push origin Alok-branch
+		
+		5. Create a Pull Request(PR) using Github
+		
+		6. Get the latest changes in master
+		// Commit the changes in your branch
+		git checkout master
+		git pull origin master
+		git checkout Alok-Branch
+		git merge master
+		git push origin Alok-branch
+		
 
             
