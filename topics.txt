@@ -1,0 +1,72 @@
+JS Part 1: Intro, History and Declaring Variables
+#################################################
+
+References for Javascript
+    Official: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+    
+    My recommendation: https://javascript.info/
+
+
+History
+
+    1995: Netscape, Brendan Eich
+
+    Late 90s: Dynamic HTML
+
+
+    2008: Chrome and V8(Written in C++)
+
+    2009:  nodejs (JS for server side development)
+
+    2011: jQuery
+
+    2012: JSON
+
+    2013: MongoDb (JS for Database work)
+
+    2013: proliferation of dozens of frameworks for front  development (React, Angularjs, Vue, EJS, webpack)
+
+    MERN stack
+    M - MongoDb
+    E - Express(REST APIs on HTTP)
+    R- React
+    N - Nodejs
+
+
+Actual name of JavaScript is EcmaScript that's why JS versions have ES prefix. TC39 committe inside ECMA is responsible for handling the language specification for JavaScript.
+for example:-
+    ES1995 or ES1
+    ..
+    ..
+    ES2015 or ES6
+    ES2016 or ES7
+    ES2017 or ES8
+    ES2018 or ES9
+    ES2019 or ES10
+    ES2020 or ES11
+    ES2021 or ES12
+    ES2022 or ES13
+
+
+
+Declaring Variables in JS
+
+    var
+
+
+        Problems with var
+
+            1. Redeclarable
+                var a = 5;
+                var a = true;
+
+            2. var is function scope
+
+            3. var is hoisted
+
+            4. var is added as a property in window
+
+    let 
+
+
+    const
