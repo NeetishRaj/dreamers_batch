@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item 4</li>
+            <li>List item 5</li>
+            <li>List item 6</li>
+            <li>List item 7</li>
+            <li>List item 8</li>
+            <li>List item 9</li>
+            <li id="tenth">List item 10</li>
+        </ul>
+    </div>
+     
+    <script>
+
+        window.onload = () => {
+            let new_val = prompt("Enter new value for tenth item", "");
+
+            tenth.textContent = new_val;
+        }
+    </script>
+
+</body>
+
+</html>
