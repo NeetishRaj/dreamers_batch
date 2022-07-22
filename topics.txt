@@ -1,0 +1,38 @@
+JS Part 2: JS functions
+#######################
+
+
+Functions in JavaScript
+
+    - Ways of creating a function in JS
+        1. Function declaratation
+            Syntax: 
+                function name() {
+                    //function body
+                }
+        2. Function expression
+            Syntax: 
+                const name = function() {
+                    // function body
+                }
+        3. Arrow function
+            Syntax: const name = () => {
+                // function body
+            }
+
+    - handling arguments in JS
+    - Scope (Closure)
+    - Hoisting for var and function declaratations
+
+
+
+Important Points
+################
+
+Q. Which one should you use among var, let and const?
+
+A. var shouldn't be used anymore, it's not recommended.
+    We should be using 
+
+    let - if the variable's value will change.
+    const - if the variable's value  will never change.
