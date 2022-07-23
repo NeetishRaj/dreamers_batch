@@ -21,7 +21,13 @@ Functions in JavaScript
             }
 
     - handling arguments in JS
-    - Scope (Closure)
+    - Scope
+        1. Global Scope
+        2. Function Scope
+        3. Block Scope
+            Only followed by let and const
+
+
     - Hoisting for var and function declaratations
 
 
@@ -36,3 +42,75 @@ A. var shouldn't be used anymore, it's not recommended.
 
     let - if the variable's value will change.
     const - if the variable's value  will never change.
+
+
+Q. will this code produce error?
+
+function test() {
+
+    {
+        var t = 1;
+    }
+
+    console.log(t * 5)
+}
+
+test();
+
+A. No
+
+
+Q. will this code produce error?
+
+function is_senior(age) {
+    {
+        const AGE_LIMIT  = 60;
+    }
+
+    if(age > AGE_LIMIT) {
+        return true;
+    } else {
+        return false
+    }
+}
+
+is_senior(55);
+
+A. Yes, because AGE_LIMIT is not accessible outside block
+
+
+Q. What is the problem with this code?
+
+let MAX_AGE = 60;
+
+function is_senior(age) {
+    let MAX_AGE = 55;
+
+    if(age > MAX_AGE) {
+        return true;
+    } else {
+        return false
+    }
+}
+is_senior(58);
+
+A. redeclaring MAX_AGE twice using let
+
+
+
+Q. What is the problem with this code?
+
+var MAX_AGE = 60;
+
+function is_senior(age) {
+    var MAX_AGE = 55;
+
+    if(age > MAX_AGE) {
+        return true;
+    } else {
+        return false
+    }
+}
+is_senior(58);
+
+A.  This code will not throw error and will work. But this not recommended to create duplicate variables  or redeclare again.
