@@ -15,7 +15,7 @@ Functions in JavaScript
                 const name = function() {
                     // function body
                 }
-        3. Arrow function
+        3. Function expression with Arrow function
             Syntax: const name = () => {
                 // function body
             }
@@ -114,3 +114,44 @@ function is_senior(age) {
 is_senior(58);
 
 A.  This code will not throw error and will work. But this not recommended to create duplicate variables  or redeclare again.
+
+
+
+
+Q. How will this code be interpreted by Compiler?
+
+    i. 
+        add(10, 20)
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+    A:  function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        add(10, 20);
+
+
+
+    ii. 
+        function multiply_10(num) {
+            a = 10;
+            const result = num  * a;
+            var a = 0;
+            return result;
+        }
+
+    A: 
+        function multiply_10(num) {
+            var a = undefined;
+            a = 10;
+            const result = num  * a;
+            a = 0;
+            return result;
+        }
+
+
+    
+Q: Does let and const allow Hoisting?
+A: NO
