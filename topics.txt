@@ -1,0 +1,33 @@
+JS Part 4: Data types in JS
+###########################
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects
+
+Behavior of reference type: https://neetishop.medium.com/copying-objects-in-javascript-8590e2d45c4
+
+typeof operator
+
+Primitive  
+    Undefined type
+    Null type
+    Boolean type
+    Number type
+    String type
+    BigInt type
+    Symbol type
+
+Reference
+    objects
+    Arrays
+    Maps
+    Sets
+
+
+
+
+Imprtant Points
+###############
+
+Q. What is the use of undefined type?
+A. the best use is to checkif the variable is initialized with some value.
+
