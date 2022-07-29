@@ -1,0 +1,71 @@
+JS Part 5: Closures, callbacks
+#############################
+
+Closures
+
+Callbacks
+
+
+
+
+
+
+Important Notes
+###############
+
+
+Q. Is 'func' a higher order function?
+
+    function print() {
+        console.log("Hello world");
+    }
+
+    function func() {
+        print();
+    }
+
+A: NO
+
+
+
+Q. Is 'func' a higher order function?
+
+    function print() {
+        console.log("Hello world");
+    }
+
+    function func() {
+        return function () {
+            print();
+        }
+    }
+
+A: YES, because func is returning a function.
+
+
+Q. Does 'func' have a valid callback?
+
+    function print() {
+        console.log("Hello world");
+    }
+
+    function func(callback) {
+        print();
+    }
+
+A: NO, because we not invoking the callback in func
+
+
+
+Q. Does 'func' have a valid callback?
+
+    function print() {
+        console.log("Hello world");
+    }
+
+    function func(callback) {
+        print();
+        callback();
+    }
+
+A: YES
