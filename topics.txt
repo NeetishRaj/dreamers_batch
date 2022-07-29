@@ -11,7 +11,8 @@ Primitive
     Undefined type
     Null type
     Boolean type
-    Number type
+    Number type 
+        64 bit with Double precesion
     String type
     BigInt type
     Symbol type
@@ -19,8 +20,8 @@ Primitive
 Reference
     objects
     Arrays
-    Maps
-    Sets
+    Map
+    Set
 
 
 
@@ -29,5 +30,5 @@ Imprtant Points
 ###############
 
 Q. What is the use of undefined type?
-A. the best use is to checkif the variable is initialized with some value.
+A. the best use is to check if the variable is initialized with some value.
 
