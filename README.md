@@ -13,11 +13,29 @@ This repo is intended for my students for quick-reference. All the daily session
 - [7-Jul-CSS-Part-1-Box-Model-Display-Position]
 - [8-Jul-CSS-Part-2-Selectors-Image-CSS]
 - [12-Jul-CSS-Part-3-Image-CSS-And-Flexbox]
-
+- [14-Jul-CSS-Part-4-Responsive-CSS-Units-Media-Queries]
+- [15-Jul-CSS-Part-5-Transform-Transition-Animations]
+- [16-Jul-CSS-Part-6-CSS-Demos]
+- [18-Jul-CSS-Part-7-Grid-And-Bootstrap]
+- [19-Jul-Git-Github-And-Open-Source-Contribution]
+- [20-Jul-JS-Part-1-Intro-History-Var-Let-Const]
+- [22-Jul-JS-Part-2-Functions]
+- [27-Jul-JS-Part-3-Call-Stack-Higher-Order-Functions]
+- [28-Jul-JS-Part-4-Data-Types]
+- [29-Jul-JS-Part-5-Closures]
 
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
    [8-Jul-CSS-Part-2-Selectors-Image-CSS]: <https://github.com/NeetishRaj/dreamers_batch/tree/8-Jul-CSS-Part-2-Selectors-Image-CSS>
    [12-Jul-CSS-Part-3-Image-CSS-And-Flexbox]: <https://github.com/NeetishRaj/dreamers_batch/tree/12-Jul-CSS-Part-3-Image-CSS-And-Flexbox>
-  
+  [14-Jul-CSS-Part-4-Responsive-CSS-Units-Media-Queries]: <https://github.com/NeetishRaj/dreamers_batch/tree/14-Jul-CSS-Part-4-Responsive-CSS-Units-Media-Queries>
+  [15-Jul-CSS-Part-5-Transform-Transition-Animations]: <https://github.com/NeetishRaj/dreamers_batch/tree/15-Jul-CSS-Part-5-Transform-Transition-Animations>
+  [16-Jul-CSS-Part-6-CSS-Demos]: <https://github.com/NeetishRaj/dreamers_batch/tree/16-Jul-CSS-Part-6-CSS-Demos>
+  [18-Jul-CSS-Part-7-Grid-And-Bootstrap]: <https://github.com/NeetishRaj/dreamers_batch/tree/18-Jul-CSS-Part-7-Grid-And-Bootstrap>
+  [19-Jul-Git-Github-And-Open-Source-Contribution]: <https://github.com/NeetishRaj/dreamers_batch/tree/19-Jul-Git-Github-And-Open-Source-Contribution>
+  [20-Jul-JS-Part-1-Intro-History-Var-Let-Const]: <https://github.com/NeetishRaj/dreamers_batch/tree/20-Jul-JS-Part-1-Intro-History-Var-Let-Const>
+  [22-Jul-JS-Part-2-Functions]: <https://github.com/NeetishRaj/dreamers_batch/tree/22-Jul-JS-Part-2-Functions>
+  [27-Jul-JS-Part-3-Call-Stack-Higher-Order-Functions]: <https://github.com/NeetishRaj/dreamers_batch/tree/27-Jul-JS-Part-3-Call-Stack-Higher-Order-Functions>
+  [28-Jul-JS-Part-4-Data-Types]: <https://github.com/NeetishRaj/dreamers_batch/tree/28-Jul-JS-Part-4-Data-Types>
+  [29-Jul-JS-Part-5-Closures]: <https://github.com/NeetishRaj/dreamers_batch/tree/29-Jul-JS-Part-5-Closures>
