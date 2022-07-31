@@ -17,7 +17,11 @@ This repo is intended for my students for quick-reference. All the daily session
 - [15-Jul-CSS-Part-5-Transform-Transition-Animations]
 - [16-Jul-CSS-Part-6-CSS-Demos]
 - [18-Jul-CSS-Part-7-Grid-And-Bootstrap]
+
+##### Git and Github
 - [19-Jul-Git-Github-And-Open-Source-Contribution]
+
+##### JavaScript
 - [20-Jul-JS-Part-1-Intro-History-Var-Let-Const]
 - [22-Jul-JS-Part-2-Functions]
 - [27-Jul-JS-Part-3-Call-Stack-Higher-Order-Functions]
