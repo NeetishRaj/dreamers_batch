@@ -1,0 +1,29 @@
+JS Part 6: Arrays
+##################
+
+Complete reference to Arrays: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
+Intro to Arrays
+    Array class
+
+Array properties and methods
+    Array.length
+    Array.isArray()
+
+Array loop methods
+    map
+    filter
+    reduce
+    forEach
+    some
+    every
+
+
+
+
+Important Note
+###############
+
+In Arrays indexing starts from 0
+
