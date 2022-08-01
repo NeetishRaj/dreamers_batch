@@ -3,7 +3,6 @@
  *  
  */
 
-
 // func is a Higher order function
 function func(callback1, callback2) {
     // Here is some time taking operation

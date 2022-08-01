@@ -13,6 +13,23 @@ Callbacks
 Important Notes
 ###############
 
+Q.  What are Closures in JS and why are they used?
+A. Closure is a JS tricks where in order to make something(variable, function) private we wrap it inside     another function.
+    
+    Example: 
+    function closureFunction() {
+        let somePrivateVar = 0;
+
+        return  function () {
+            // using somePrivateVar
+        }
+    }
+
+    //Using the closure function
+    const main_function = closureFunction();
+
+    main_function();
+    main_function();
 
 Q. Is 'func' a higher order function?
 

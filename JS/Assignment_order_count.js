@@ -3,10 +3,12 @@
     
     // }
     
+
 let counter = 0;
     
 const order = () => {
-    console.log('Total order = ' + ++counter);
+    counter = counter + 1;
+    console.log('Total order = ' + counter);
 }
 
 
@@ -22,4 +24,4 @@ function some_other_code() {
 
 some_other_code();
 
-order(); // // Total orders = 1
+order(); // // Total orders = 1 , instead of 4
