@@ -11,13 +11,37 @@ Array properties and methods
     Array.length
     Array.isArray()
 
-Array loop methods
-    map
-    filter
-    reduce
-    forEach
-    some
-    every
+
+Mutator functions in Array
+    Array.push()
+    Array.pop()
+    Array.shift()
+    Array.unshift()
+
+    Array.splice()
+
+Arrow function syntax
+    Few syntax concentions
+        1. If single return statment then that return statement with curly braces can be ommitted.
+            Example: 
+            const add = (num1, num2) => {
+                return num1 + num2;
+            }
+            const add = (num1, num2) => num1 + num2;
+
+        2. If single argument then parenthesis can be ommitted.
+            Example:
+            const square = (num) => num * num;
+            const square = num => num * num;
+
+
+Iterator functions in Array
+    Array.filter()
+    Array.forEach()
+    Array.map()
+    Array.reduce()
+    Array.some()
+    Array.every()
 
 
 
@@ -25,5 +49,22 @@ Array loop methods
 Important Note
 ###############
 
-In Arrays indexing starts from 0
+# In Arrays indexing starts from 0
 
+# Iterator functions take a function as an argument
+    and the signature for those function argument is like this
+
+    (item, index, arr) => {
+
+    } 
+
+
+Q. plese tell the output of the given code
+
+    const arr = new Array(10).fill(5).filter(item => item % 2 === 0);
+
+    a. arr is []
+    b. arr is [5, 5]
+    c. arr is [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+
+A. a

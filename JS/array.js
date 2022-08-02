@@ -29,3 +29,11 @@ const arr3 = new Array(10);
 arr3.fill(1)
 console.log(arr3.length);  //10
 console.log(arr3); //[1, 1, 1, 1, ......]
+
+
+// determining the Array types in JS using Array.isArray
+if(Array.isArray(arr3)) {
+    console.log('arr3 is an Array');
+} else {
+    console.log('arr3 is not an Array');
+}

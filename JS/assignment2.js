@@ -32,3 +32,25 @@
  * 
  * 
  */
+
+
+const board = [
+    ['BR', 'BN', 'BB', 'BQ', 'BK', 'BB', 'BN', 'BR'],
+    ['BP', 'BP', 'BP', 'BP', 'BP', 'BP', 'BP', 'BP'],
+    ['', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    ['', '', '', '', '', '', '', ''],
+    ['WP', 'WP', 'WP', 'WP', 'WP', 'WP', 'WP', 'WP'],
+    ['WR', 'WN', 'W', 'WQ', 'WK', 'W', 'WN', 'WR'],
+]
+
+for (let row = 0; row < 8; row++) {
+    let row_str = ''; 
+
+    for (let piece = 0; piece < 8; piece++) {
+        row_str += board[row][piece] + '\t';
+    }
+
+    console.log(row_str);
+}
