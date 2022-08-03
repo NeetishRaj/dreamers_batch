@@ -1,3 +1,0 @@
-Hi Myself Bindu, 
-
-I have added this file to implement my first open source contribution.
