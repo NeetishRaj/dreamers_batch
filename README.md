@@ -23,6 +23,7 @@ This repo is intended for my students for quick-reference. All the daily session
 - [27-Jul-JS-Part-3-Call-Stack-Higher-Order-Functions]
 - [28-Jul-JS-Part-4-Data-Types]
 - [29-Jul-JS-Part-5-Closures]
+- [1-Aug-JS-Part-6-Arrays]
 
 
 [//]: #
@@ -39,3 +40,4 @@ This repo is intended for my students for quick-reference. All the daily session
   [27-Jul-JS-Part-3-Call-Stack-Higher-Order-Functions]: <https://github.com/NeetishRaj/dreamers_batch/tree/27-Jul-JS-Part-3-Call-Stack-Higher-Order-Functions>
   [28-Jul-JS-Part-4-Data-Types]: <https://github.com/NeetishRaj/dreamers_batch/tree/28-Jul-JS-Part-4-Data-Types>
   [29-Jul-JS-Part-5-Closures]: <https://github.com/NeetishRaj/dreamers_batch/tree/29-Jul-JS-Part-5-Closures>
+  [1-Aug-JS-Part-6-Arrays]: <https://github.com/NeetishRaj/dreamers_batch/tree/1-Aug-JS-Part-6-Arrays>
