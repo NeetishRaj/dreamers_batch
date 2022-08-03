@@ -38,10 +38,11 @@ Arrow function syntax
 Iterator functions in Array
     Array.filter()
     Array.forEach()
-    Array.map()
-    Array.reduce()
     Array.some()
     Array.every()
+
+    Array.map()
+    Array.reduce()
 
 
 
@@ -68,3 +69,39 @@ Q. plese tell the output of the given code
     c. arr is [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]
 
 A. a
+
+
+
+Q. What are the differences between for loop and Array.forEach loop ?
+A.
+    1. 
+        forEach loop will execute for all items of the array ALWAYS but for-loop can be discontinued ealier.
+        We cannot break from forEach loop in between the loop but we can for for-loop.
+
+
+    2. 
+        forEach loop will not modify the array content while iterating over it.
+        but using for-loop we can modify the array content while iterating over it.
+
+        const even = new Array(200);
+
+        for (let i = 0; i < even.length; i++) {
+            even[i] = (i + 1) * 2;
+        }
+
+        // This will update the even array
+
+        even.forEach((item, index, arr) => {
+            even[index] = (index + 1) * 2;
+        })
+
+        // But this will not update the even array
+
+    3. 
+        break doesn't work inside forEach loop
+
+
+
+Q. How to stop an ongoing forEach loop?
+A. we can use 'return'
+
