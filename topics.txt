@@ -1,0 +1,104 @@
+JS part7: Objects
+#################
+
+Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+Objects
+    syntax of an object: 
+        {
+            key1: value,
+            key2: value,
+            ..
+            ..
+        }
+
+        Here key1 and key2 are supposed to be unique strings
+    Basics
+        ways of accessing properties in an object
+            1. Dot notation
+                const obj  = {name: "john", age: 29}
+                obj.name  // john
+
+            2. [] square bracket notation.
+                const obj  = {name: "john", age: 29}
+                obj["name"] // john
+
+    Data structure
+    Object class
+    
+Object properties and methods
+    Object.keys()
+    Object.values()
+    Object.entries()
+    Object.hasOwnProperty()
+
+
+
+
+Important Notes
+###############
+
+
+Q. Given this code
+    const cars = [
+        {brand: "Honda", make: "Jazz", year: 2018},
+        {brand: "Maruti", make: "Baleno", year: 2022},
+        {brand: "Hyundai", make: "Seltos", year: 2020},
+        {brand: "Tata", make: "Harrier", year: 2019}
+    ];
+
+    write the code to access the year of making for the Tata car?
+
+A. console.log(cars[3].year) // 2019
+
+
+Q. Given this code
+    const cars = [
+        {
+            brand: "Honda",
+            make: "Jazz",
+            year: 2018,
+            owner: {
+                name: "Morpheus",
+                registration: "awe3434"
+            }
+        },
+        {
+            brand: "Maruti", 
+            make: "Baleno",
+            year: 2022
+            owner: {
+                name: "Prakash",
+                registration: "adsf676"
+            }
+    ];
+
+    write the code to access the owner registration of Baleno car?
+
+A. console.log(cars[1].owner.registration) // adsf676
+
+
+
+Q. Given this code
+    const student = {
+        name: "Rekha",
+        age: 23,
+        subjects: [
+            {
+                faculty: "Umesh",
+                subject: "Bio"
+            },
+            {
+                faculty: "Raghav",
+                subject: "Che"
+            },
+            {
+                faculty: "Sharada",
+                subject: "Phy"
+            },
+        ]
+    }
+
+    write the code to access the faculty name of phy ?
+
+A. console.log(student.subjects[2].faculty) // Sharada 
