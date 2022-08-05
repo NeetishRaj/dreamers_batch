@@ -24,6 +24,11 @@ const object3 = {
 // console.log(object3);
 
 
+const object4  = new Object();
+object4.name = "John";
+object4.age = 22;
+
+
 // Objects inside Objects
 const person = {
     name: "john doe",
@@ -55,5 +60,22 @@ const student = {
     ]
 }
 
+// function inside object
+const data = {
+    nodes: 234,
+    print:  function() {
+        console.log("the current count of nodes is " + data.nodes);
+    }
+}
 
 
+data.print();
+
+
+
+// JS is very forgiving in nature when it comes to undefined prop names
+const some_obj = {
+    age: 23
+}
+
+console.log(some_obj.something_else);  //undefined

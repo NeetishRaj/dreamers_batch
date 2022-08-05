@@ -44,7 +44,7 @@ const students = [
 
 
 
-// Approach 2
+// Approach 2: Let's use a function to create student entries in studentss array
 
 const studentss = [];
 
@@ -69,7 +69,7 @@ update_students("Diksha", 22, 3, "Geo");
 
 
 
-// Approach 3: let's make to introduce an incrementing roll_no concept
+// Approach 3: let's use closure to introduce an incrementing roll_no concept
 
 const studentsss = [];
 

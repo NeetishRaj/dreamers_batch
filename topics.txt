@@ -12,7 +12,8 @@ Objects
             ..
         }
 
-        Here key1 and key2 are supposed to be unique strings
+        Here key1 and key2 are supposed to be valid identifiers or unique strings
+
     Basics
         ways of accessing properties in an object
             1. Dot notation
@@ -23,7 +24,6 @@ Objects
                 const obj  = {name: "john", age: 29}
                 obj["name"] // john
 
-    Data structure
     Object class
     
 Object properties and methods
@@ -102,3 +102,44 @@ Q. Given this code
     write the code to access the faculty name of phy ?
 
 A. console.log(student.subjects[2].faculty) // Sharada 
+
+
+
+
+Q. When to use square brancket notation to access Object properties in JS?
+A.
+    We use square brackets When
+    
+    The property name is not a valid identifier ( i.e has spaces, special characters) 
+    Example:
+        const obj = {
+            "some prop name": 345
+        }
+        obj["some prop name"]  // 345
+
+
+Q. Guess the output.
+
+    const obj = {
+        data: [
+            {
+                name: "rahim",
+                age: 23,
+                address: {
+                    city: "jaisalmer"
+                }
+            },
+            {
+                name: "sugandh",
+                age: 22,
+                address: {
+                    city: "Indore"
+                }
+            }
+        ]
+    }
+
+    console.log(obj.data[1]["address"]) // {city: "Indore"}
+    console.log(obj.data[1]["address"].city) // Indore
+    console.log(obj.data[1]["address"]["city"]) // Indore
+    console.log(obj["data"][1]["address"]["city"])  //Indore
