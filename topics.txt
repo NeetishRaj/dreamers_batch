@@ -1,0 +1,16 @@
+JS Part 8: Prototype, Prototype Chain and JS Prototype Inheritance
+##################################################################
+
+Prototype
+    __proto__
+
+'this' keyword
+
+
+
+
+Imprtant facts
+###############
+
+
+Q. 
