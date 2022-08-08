@@ -13,4 +13,15 @@ Imprtant facts
 ###############
 
 
-Q. 
+Q. what will happen if we run below code?
+
+    const obj = {
+        print: function() {
+            this.print();
+        }
+    }
+
+    obj.print();
+
+A. StackOverflow will happen and we ll get an error.
+

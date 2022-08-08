@@ -8,10 +8,10 @@
 
 const obj = {
     name:  'John',
+
     print: function() {
         // here 'this' is pointing to the obj class
-        ;
-        console.log(obj);
+        console.log(this.name);
     }
 };
 
