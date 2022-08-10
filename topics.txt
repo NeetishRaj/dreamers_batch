@@ -1,0 +1,68 @@
+JS Part 9: Math, String and Date
+################################
+
+
+Math
+    Complete Reference: 
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+    PI
+    ceil(), floor(), round()
+    max(), min()
+    random()
+    abs()
+    pow()
+    sqrt()
+
+String
+    Complete  Reference:
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+    Ways of creating String
+        single quotes ('hello world')
+        double quotes ("hello world")
+        back quotes (`hello world`) 
+
+    toLowerCase(), toUpperCase()
+    concat()
+    includes()
+    slice()
+    substr()
+    trim()
+    split()  *
+
+
+Date
+    Complete Reference:
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+    UTC time format
+    getDate()
+    getHours()
+    getMinutes()
+    getSeconds()
+
+
+    
+
+Important Notes
+###############
+
+
+Q. Guess the output of this code.
+
+    const arr = [20, -10, 2.5, 60];
+    
+    console.log(Math.max(...arr)) ?
+
+A. 60
+
+
+Q. Given the code
+
+    const sentence = "I love to code";
+
+    Write a one-liner code to break this sentence into words array.
+
+A. const words = sentence.split(" "); //['I', 'love', 'to', 'code']
+
+
