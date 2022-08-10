@@ -1,5 +1,9 @@
 First class functions
 Arrow functions: lexical scoping of 'this' inside arrow function.
 call, apply and bind methods.
-
 Method Chaining
+shallow copy vs deep copy
+
+var, let and const differences
+
+

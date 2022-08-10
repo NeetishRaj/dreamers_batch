@@ -2,9 +2,21 @@ JS Part 8: Prototype, Prototype Chain and JS Prototype Inheritance
 ##################################################################
 
 Prototype
-    __proto__
+    prototype property
+    prototype chains: __proto__
+    understanding inheritance using prototype
+
 
 'this' keyword
+    this in global scope is windows.
+    in all other cases this points to the object in current scope.
+
+oops
+    constructor functions (Old class syntax)
+    Syntax: 
+        function Car(model) {
+            this.model = model;
+        }
 
 
 
@@ -23,5 +35,63 @@ Q. what will happen if we run below code?
 
     obj.print();
 
-A. StackOverflow will happen and we ll get an error.
+A. StackOverflow will happen and we ll get an error due to infinite recursive call.
 
+
+Q. Guess the output of following.
+
+    const arr = [1, 2, 3, 4, 5];
+
+    Array.prototype.length = 10;
+
+    console.log(arr.length) // ?
+
+A. 5
+
+
+Q. Guess the output of following.
+
+    const arr = [1, 2, 3, 4, 5];
+
+    Array.prototype.second_last = function() {
+        const current_array = this;
+        return current_array[current_array.length - 2];
+    }
+
+    console.log(arr.last()) // ?
+
+A. 4
+
+
+
+Q. Guess the output of following.
+
+    const object = {
+        name: "some random object",
+        val: 20
+    }
+
+    object.prototype.val = 30;
+
+    console.log(object.val)  ?
+
+A. Error, 
+    object.prototype is undefined
+
+    NOTE: We dot use prototype on instances but only on classes.
+
+
+
+Q. What is the top class in JavaScript?
+A. Object
+
+Q. Given this object.
+
+    const obj  = {
+        name: "john doe",
+        age: 34
+    };
+
+    How can we create a fresh copy of this object 'obj'?
+
+A. const obj1 = Object.create(obj);
