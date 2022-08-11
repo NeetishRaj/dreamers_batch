@@ -35,7 +35,9 @@ Date
     Complete Reference:
         https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
 
-    UTC time format
+    UTC time format  and IST
+    Milliseconds elapsed
+        Date.now() : Milliseconds elapsed since 1970, Jan 1
     getDate()
     getHours()
     getMinutes()
@@ -66,3 +68,16 @@ Q. Given the code
 A. const words = sentence.split(" "); //['I', 'love', 'to', 'code']
 
 
+
+Q. What the difference between the two lines?
+
+    const date1 = Date("2022-08-11");
+    const date2 = new Date("2022-08-11");
+
+A. Date("2022-08-11"): we are trying to parse the string into current local time.
+    This is the one we use to display local time in websites.
+    typeof will be 'string'
+
+    new Date("2022-08-11"): we are parsing date string but creating a date object.
+    This is the one we use to do operations on time.
+    typeof will be 'object'
