@@ -30,7 +30,7 @@ This repo is intended for my students for quick-reference. All the daily session
 - [1-Aug-JS-Part-6-Arrays]
 - [4-Aug-JS-Part-7-Objects]
 - [5-Aug-JS-Part-8-Prototype-Inheritance-OOPS]
-
+- [10-Aug-JS-Part-9-Math-String-Date]
 
 
 [//]: #
@@ -50,4 +50,5 @@ This repo is intended for my students for quick-reference. All the daily session
   [1-Aug-JS-Part-6-Arrays]: <https://github.com/NeetishRaj/dreamers_batch/tree/1-Aug-JS-Part-6-Arrays>
   [4-Aug-JS-Part-7-Objects]: <https://github.com/NeetishRaj/dreamers_batch/tree/4-Aug-JS-Part-7-Objects>
   [5-Aug-JS-Part-8-Prototype-Inheritance-OOPS]: <https://github.com/NeetishRaj/dreamers_batch/tree/5-Aug-JS-Part-8-Prototype-Inheritance-OOPS>
+  [10-Aug-JS-Part-9-Math-String-Date]: <https://github.com/NeetishRaj/dreamers_batch/tree/10-Aug-JS-Part-9-Math-String-Date>
 
