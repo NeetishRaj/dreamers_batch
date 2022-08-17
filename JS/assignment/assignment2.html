@@ -1,0 +1,33 @@
+<!-- 
+    Create an HTM page where you are asking users a math quiz using prompt()
+    If the answer is incorrect then close the window.
+    If the answer is right then alert() "good job"
+
+    NOTE: We can only close window which were opened by the script itself.
+
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+    <script>
+
+        const user_answer = prompt('What is 8 x 20', '');
+        const expected_answer = '160';
+
+
+        if(user_answer === expected_answer) {
+            alert('Great Job!');
+        } else {
+            window.close();
+        }
+
+    </script>
+ </body>
+ </html>

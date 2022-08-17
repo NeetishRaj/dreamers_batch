@@ -1,0 +1,71 @@
+JS Part 10: BOM (Browser Object Model)
+#######################
+
+Complete reference of BOM or window object: 
+    https://developer.mozilla.org/en-US/docs/Web/API/Window
+
+
+BOM (Browser Object Model)
+    window object
+        global variables
+        window.document object
+        window.innerHeight/window.innerWidth
+        window.open(), close(), moveTo(), resizeTo()
+        window.prompt(), alert()
+    
+    window.history
+        back()
+        forward()
+        go()
+        length
+
+    window.navigator
+        userAgent
+        appName, appVersion, appCodeName
+        cookieEnabled
+        platform
+        online
+        geolocation
+
+    window.speechSynthesis
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance("hello"))
+
+
+
+
+Important Notes
+###############
+
+Q. what's the difference between the two lines if any?
+
+    console.log("hi");
+    window.console.log("hi");
+
+A. No, there is no difference.
+
+
+
+Q. Guess the output.
+
+    var a = 10;
+    console.log(++window.a);
+
+A. 11
+
+
+
+Q. Guess the output.
+
+    function some_function() {
+        var a = 20;
+        console.log(window.a);
+    }
+
+    some_function();
+
+A. undefined
+
+
+Q. How to find if a malicious website is accessing my cookies or not?
+A.  We casn use this property on that window to check 
+window.navigator.cookieEnabled
