@@ -1,0 +1,70 @@
+<!-- 
+    Write a code to dynamically generate an HTML page
+    printing a beautiful table of 18 (20 times)
+
+    18 x 1 = 18
+    18 x 2 = 36
+    ...
+
+    18 x 20 = 360
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     body {
+        background-color: aqua;
+     }
+
+     ul {
+        list-style-type:circle;
+     }
+     ul > li {
+        font-size: larger;
+        font-weight: bolder;
+        color: brown;
+
+        margin: 5px;
+        padding: 5px;
+     }
+    </style>
+ </head>
+ <body>
+     <!-- <ul>
+         <li>18 x 1 = 18</li>
+         <li>18 x 2 = 36</li>
+         <li>18 x 3 = 54</li>
+
+     </ul> -->
+    
+    <script>
+
+        // Create a ul
+        const ul = document.createElement('ul');
+        document.body.appendChild(ul);
+
+
+        // Create 20 li
+
+        for (let i = 1; i <= 20; i++) {
+            
+            const li = document.createElement('li');
+            ul.appendChild(li);
+
+            // You code comes here
+            const li_text = `18 x ${i} = ${18 * i}`
+            const li_text_node = document.createTextNode(li_text);
+            li.appendChild(li_text_node);
+        }
+
+
+
+    </script>
+ </body>
+ </html>

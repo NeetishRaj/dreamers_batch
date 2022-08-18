@@ -1,0 +1,38 @@
+JS Part 11: DOM basics and Selectors
+####################################
+
+Complete reference to DOM: 
+    https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+
+DOM basics
+    DOM is JS representation of HTML
+    HTMLElement and Node
+    window.onload event to work with DOM
+
+    HTMLElement
+        textContent
+        innerHTML
+
+
+DOM Selectors
+    getElementById()
+    querySelector()
+    getElementsByTagName()
+    getElementsByClassName()
+    querySelectorAll()   
+
+DOM create
+    createElement()
+    appendChild()
+    createTextNode()
+
+
+
+Important Points
+################
+
+
+Q. Why do we write script tag in the bottom of the body tag?
+A. So that DOM related operations happen only after the above HTML is loaded.
+    However, its alwaays  recommended to do DOM operations after window.onload event

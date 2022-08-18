@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        ul > li:nth-child(1) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div>
+        <h1 id="heading">Website heading</h1>
+
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sunt beatae repellat numquam, consequuntur quod unde necessitatibus exercitationem eligendi, soluta vitae aut repellendus quis ab asperiores laborum neque quia harum.</p>
+   
+        <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi velit, expedita corrupti aperiam repellendus voluptatum suscipit porro totam ut rem deleniti maiores dicta vel quisquam ipsam reprehenderit dolorum nihil sit!</p>
+        <div>
+            <ul>
+                <li>List item 1</li>
+                <li>List item 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function init() {
+
+            const h1 = document.getElementById('heading');
+            
+            // Print the content of h1 tag
+            console.log(h1.textContent);
+
+
+            // Change the text
+            h1.textContent = "New heading";
+
+
+
+            // To get the reference of first li using querySelector()
+            const first_li = document.querySelector('ul > li:nth-child(1)');
+            first_li.textContent = "Changed List item 1";
+
+
+
+            // Get the reference of all li tags
+
+            const li_items = document.getElementsByTagName('li');
+            console.log(li_items);
+
+            li_items[1].textContent = "changed via getElementsByTagName"
+
+
+            // Get the HTML items based on classname
+            const paras = document.getElementsByClassName('para');
+            console.log(paras);
+            
+        }
+
+        window.onload = init;
+
+    </script>
+</body>
+</html>
