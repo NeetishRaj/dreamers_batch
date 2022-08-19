@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 20px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+
+            padding: 20px;
+            background-color: red;
+        }
+
+        div.highlight {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="redDiv" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum voluptatum ratione, dolorum illum quis amet consectetur cupiditate, quisquam quos incidunt eligendi atque excepturi voluptas? Alias sed voluptas deleniti aliquid architecto!</div>
+
+
+
+    <script>
+    
+    function init() {
+        const redDiv = document.getElementById('redDiv');
+
+        function click_handler(event) {
+            console.log("Someone clicked the Red Div");
+            console.log(event);
+        }
+
+        redDiv.onclick = click_handler;
+
+
+
+        // Dblclick
+
+        redDiv.ondblclick = function() {
+            // console.log("Double click happended on Red Div");
+        }
+
+        // mouseenter
+        redDiv.onmouseenter = function() {
+            // console.log("Entered the Red Div");
+            redDiv.setAttribute('class', 'highlight');
+        }
+
+        // mouseleave
+        redDiv.onmouseleave = function() {
+            // console.log("Left the Red Div");
+            redDiv.setAttribute('class', '');
+        }
+
+        //oncontextmenu : right click
+        redDiv.oncontextmenu = function () {
+            // console.log("Right clicked on Red Div");
+        }
+
+        // mousemove
+        redDiv.onmousemove = function() {
+            // console.log("mousemove happened");
+        }
+
+
+    }
+    
+    window.onload = init;
+
+    </script>
+</body>
+</html>

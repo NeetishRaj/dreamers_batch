@@ -1,0 +1,67 @@
+JS part 12: DOM Events
+######################
+
+Mouse events: 
+    https://javascript.info/mouse-events-basics
+
+Event argument
+    Example:  
+        document.onclick = function(event) {
+            // use event object here
+        }
+
+Three ways of working with Events in javascript
+    1. Inline attribute
+        <div onclick="click_handler()">
+
+    2. object property
+        Syntax:
+            const someDiv = document.getElementById('someDiv');
+            someDiv.onclick = function() {
+
+            }
+            
+    3. addEventListener()
+        Syntax: 
+            const someDiv = document.getElementById('someDiv');
+            someDiv.addEventListener('click', click_handler);
+
+DOM Events
+    Mouse  Events
+        onclick	occurs when element is clicked.
+        ondblclick	occurs when element is double-clicked.
+        onmouseover	occurs when mouse is moved over an element.
+        onmouseout	occurs when mouse is moved out from an element (after moved over).
+        onmousedown	occurs when mouse button is pressed over an element.
+        onmouseup	occurs when mouse is released from an element (after mouse is pressed).
+  
+    Keyboard events
+        onkeydown	occurs when key is being pressed.
+        onkeypress	occurs when user presses the key.
+        onkeyup	occurs when key is released.
+
+    Form Input related events
+        onfocus	occurs when an element gets focus such as button, input, textarea etc.
+        onblur	occurs when form looses the focus from an element.
+        onsubmit	occurs when form is submitted.
+        onreset	occurs when form is reset.
+   
+   
+    onscroll	occurs when document is scrolled.
+    onload	occurs when document, object or frameset is loaded.
+    onunload	occurs when body or frameset is unloaded.
+    onresized	occurs when document is resized.
+
+
+
+
+
+Important Notes
+###############
+
+Q. Among the three ways to add events why would the addEventListenerbe preffered?
+
+A.  The benefits of addEventListener are
+
+    1. Can attach multiple event handler functions for same event.
+    2. we can control capturing/Bubbling.
