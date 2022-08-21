@@ -1,0 +1,14 @@
+Method Chaining
+###############
+
+Method Chaining concept
+
+const str = "abcde";
+const res = str.split("").reverse().join("");
+
+OR
+
+const str = "abcde";
+const str_arr = str.split("");    	 // [ 'a', 'b', 'c', 'd', 'e' ]
+const rev_arr = str_arr.reverse();	 // [ 'e', 'd', 'c', 'b', 'a' ]
+const res = rev_arr.join("");		 // 'edcba'

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #images img {
+            width: 150px;
+            height: 150px;
+
+            margin: 30px;
+
+            border: 2px solid transparent;
+        }
+
+        .selected {
+            border: 2px solid black !important;
+        }
+
+        .hide-button {
+            display: none;
+        }
+
+        .show-button {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+
+        <h3>Please click on the identical tiles to verify that you are not a robot</h3>
+        
+        <div id="images">
+            
+        </div>
+
+        <div>
+            <!-- To be rendered after two clicks of images, Double clicking same image  shouldn't render this button-->
+            <button id="btn" onclick="verify()" class="hide-button">Verify</button>
+
+            <!-- To be rendered after one or more clicks of images -->
+            <button id="reset" onclick="reset()" class="hide-button">Reset</button>
+        </div>
+
+        <div>
+
+            <p id="para"></p>
+        </div>
+
+    </div>
+
+    <script>
+        const images = [
+            "https://i.imgur.com/MtJPqjB.png",
+            "https://i.imgur.com/dCx692n.png",
+            "https://i.imgur.com/uZPze6D.png",
+            "https://i.imgur.com/s4xtioi.png",
+            "https://i.imgur.com/skLnaOI.png"
+        ];
+
+        const SUCCESS_MESSAGE = "You are a human. Congratulations!";
+        const FAILURE_MESSAGE = "We can't verify you as a human. You selected the non-identical tiles.";
+        let selected = [];
+
+        let verify_button, reset_button;
+        
+        /**
+         * Returns random permutaions like below
+         * 
+         * [0, 4, 2, 3, 1, 3]
+         * [4, 2, 0, 3, 1, 3] 
+         */
+        function random_positions() {
+            const arr = new Array(5).fill(false); // [false, false, false, false,  false]
+            const result = [];
+            
+            let is_all_items_picked = false;
+            while(!is_all_items_picked) {
+                const rand = Math.floor(Math.random() * 5);
+
+                if(!arr[rand]) {
+                    result.push(rand);
+                    arr[rand] = true;
+                }
+
+                is_all_items_picked = arr.every(item => item);
+            }
+
+            // Now randomly pick a copy for sixth image
+            result.push(Math.floor(Math.random() * 5))
+
+            return result;
+        }
+
+        function reset() {
+            // hide the verify button
+            verify_button.setAttribute('class', 'hide-button');
+
+            // hide the reset button
+            reset_button.setAttribute('class', 'hide-button');
+
+            // remove all image selections
+            selected = [];
+
+            const imgs = document.querySelectorAll('img');
+            for (let i = 0; i < imgs.length; i++) {
+                imgs[i].setAttribute('class', '');
+            }
+        }
+
+        function verify() {
+            const para = document.getElementById('para');
+            if(selected[0] === selected[1]){
+                para.textContent = SUCCESS_MESSAGE;
+            } else {
+                para.textContent = FAILURE_MESSAGE;
+            }
+        }
+
+        function init() {
+
+            const images_div = document.getElementById("images");
+            reset_button = document.getElementById('reset');
+            verify_button = document.getElementById('btn');
+            // Randomly render 6 images
+            const rand_positions = random_positions();
+
+
+            rand_positions.forEach((item) => {
+                const img = document.createElement('img');
+                img.setAttribute('src', images[item]);
+                img.setAttribute('data-ns-test', `img${item + 1}`);
+                img.setAttribute('referrerPolicy', 'no-referrer');
+                images_div.appendChild(img);
+                
+                
+                img.onclick = function () {
+                    // If already selected then do nothing
+                    if(img.classList.length === 1 && img.classList[0] === 'selected')
+                        return;
+                    
+                    img.setAttribute('class', 'selected');
+
+
+                    selected.push(item);
+
+                    // Check selection
+                    if(selected.length > 0) {
+                        reset_button.setAttribute('class', 'show-button');
+                    }
+
+                    if(selected.length === 2) {
+                        verify_button.setAttribute('class', 'show-button');
+                    }
+                }
+
+            })
+            
+        }
+
+        window.onload = init;
+
+    </script>
+</body>
+</html>
