@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            padding: 20px;
+        }
+        #parent {
+            width: 250px;
+            height: 250px;
+
+            background-color: red;
+        }
+
+        #child {
+            width: 200px;
+            height: 200px;
+
+            background-color: green;
+        }
+
+        #grandChild {
+            width: 150px;
+            height: 150px;
+
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">
+            <div id="grandChild">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = init;
+
+        function init() {
+
+            const parent = document.getElementById('parent');
+            const child = document.getElementById('child');
+            const grandChild = document.getElementById('grandChild');
+    
+          
+            parent.addEventListener('click', () => {
+                console.log("Red Parent clicked");
+            });
+    
+    
+            child.addEventListener('click', () => {
+                console.log("Green Child clicked");
+            })
+    
+            grandChild.addEventListener('click', (event) => {
+                console.log("Blue Grand Child clicked");
+
+                // event.stopPropagation();
+            }, true)
+        }
+
+    </script>
+</body>
+</html>

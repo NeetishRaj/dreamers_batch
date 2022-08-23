@@ -1,0 +1,41 @@
+Part 13: Event bubbling Vs Capture and Event Delegation.
+#######################################################
+
+
+Event Bubbling Vs Capture
+
+
+
+
+
+Event Delegation
+
+    It's a way to utilize Event bubbling and 
+    prevent ourselves from attaching eventlisteners
+    to all child items.
+
+    We basically delegate the task of event handling to the parent.
+
+    Example:  Parent and child can be any HTML element
+        <parent>
+            <child></child>
+            <child></child>
+            <child></child>
+        </parent>
+
+        parent.onclick = function(event) {
+            // use event.target property to access the child items
+        }
+
+
+Important Topics
+################
+
+
+Q. Is event bubbling a default behaviour ?
+A. Yes
+
+
+Q. How to stop event bubbling for a div element in a website?
+A. We can use event.stopPropagation() function.
+

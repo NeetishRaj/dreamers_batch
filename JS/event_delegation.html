@@ -1,0 +1,78 @@
+<!-- 
+
+    Problem: we have 20 list items and we want a click event associated with all 
+        the 20 list items where.
+        If we click on the list item then we get the list item text in the console.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li class="list-item">list  item 1</li>
+        <li class="list-item">list  item 2</li>
+        <li class="list-item">list  item 3</li>
+        <li class="list-item">list  item 4</li>
+        <li class="list-item">list  item 5</li>
+        <li class="list-item">list  item 6</li>
+        <li class="list-item">list  item 7</li>
+        <li class="list-item">list  item 8</li>
+        <li class="list-item">list  item 9</li>
+        <li class="list-item">list  item 10</li>
+        <li class="list-item">list  item 11</li>
+        <li class="list-item">list  item 12</li>
+        <li class="list-item">list  item 13</li>
+        <li class="list-item">list  item 14</li>
+        <li class="list-item">list  item 15</li>
+        <li class="list-item">list  item 16</li>
+        <li class="list-item">list  item 17</li>
+        <li class="list-item">list  item 18</li>
+        <li class="list-item">list  item 19</li>
+        <li class="list-item">list  item 20</li>
+    </ul>
+
+    <script>
+
+        function init() {
+            // const list_items = document.querySelectorAll('.list-item'); // returns 'NodeList' data type
+
+    
+            // for (let i = 0; i < list_items.length; i++) {
+                
+            //     list_items[i].onclick = function() {
+            //         console.log(list_items[i].textContent);
+            //     }
+            // }
+
+
+            // This is not a GOOD practice
+            // What if we have 1000 items, or even 100,000 items.
+
+
+            // There is a better way
+            // Event delegation
+
+            const ul = document.querySelector('ul');
+
+            ul.onclick = function(event) {
+                console.log(event.target.textContent);
+            }
+
+        }
+
+        window.onload = init;
+    </script>
+</body>
+</html>
