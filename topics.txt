@@ -36,6 +36,6 @@ Q. Is event bubbling a default behaviour ?
 A. Yes
 
 
-Q. How to stop event bubbling for a div element in a website?
+Q. How to stop event bubbling for some div element in a website?
 A. We can use event.stopPropagation() function.
 

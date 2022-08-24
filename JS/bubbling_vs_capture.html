@@ -53,12 +53,12 @@
           
             parent.addEventListener('click', () => {
                 console.log("Red Parent clicked");
-            });
+            }, true);
     
     
             child.addEventListener('click', () => {
                 console.log("Green Child clicked");
-            })
+            }, true)
     
             grandChild.addEventListener('click', (event) => {
                 console.log("Blue Grand Child clicked");
