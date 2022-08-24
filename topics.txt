@@ -4,7 +4,11 @@ Part 13: Event bubbling Vs Capture and Event Delegation.
 
 Event Bubbling Vs Capture
 
+    Bubbling syntax: default
+    addEventListener(event-type, callback function, useCapture = false)
 
+    Capture sytax:
+    addEventListener(event-type, callback function, useCapture = true)
 
 
 
