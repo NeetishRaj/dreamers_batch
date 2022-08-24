@@ -32,6 +32,19 @@ Event Delegation
         }
 
 
+
+
+Type Casting
+    Explicit Type casting
+        String
+
+
+    Implicit Type Casting
+        Examples:
+            addition with string
+
+
+
 Important Topics
 ################
 
@@ -43,3 +56,13 @@ A. Yes
 Q. How to stop event bubbling for some div element in a website?
 A. We can use event.stopPropagation() function.
 
+
+Q. Please share examples of Implicit type casting in JavaScript.
+A.
+
+    1. String addition with other types
+        "abc" + 45 = "abc45"
+        true + '' = 'true'
+
+    2. Boolean implicit type casting inside if()
+        if(null) -> if(Boolean(null)) -> if(false)
