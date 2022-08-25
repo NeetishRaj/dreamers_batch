@@ -1,0 +1,80 @@
+JS Part 14: Async, callbacks and Promise
+########################################
+
+
+Async JS
+    Synchronous Vs Asynchrounous JS
+    Problem with Synchronous JS
+        UI blocking due to single threaded nature of JS
+
+callbacks
+    callback hell
+
+Promise
+    Intro
+    Why Promises?
+    
+
+
+Important Topics
+################
+
+Q. Write a sample Asynchrounous code in JS.
+
+A. We can use setTimeout function to simulate a async code  
+   
+    setTimeout(function() {
+        // anything being done asynchronously
+    }, 0)
+
+
+Q. Guess the output 
+
+    let a = 10;
+
+    setTimeout(function() {
+        a += 20;
+        console.log(a);
+    }, 0);
+
+    console.log(a);
+
+A. 10
+
+
+
+
+Q. Guess the output.
+
+    let a = 10;
+
+    function something(cb){
+        cb();
+        console.log(a);
+    }
+
+    something(function() {
+        a = 20;
+        console.log(a);
+    })
+
+
+A. 
+    20
+    20
+
+
+Q. Guess the output
+
+    let str = 'abc';
+
+    function something(cb) {
+        str += 'xyz';
+        cb(str + '123');
+    }
+
+    something(function(somestr) {
+        console.log(somestr);
+    })
+
+A.

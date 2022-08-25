@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="print()">Print Random Num</button>
+    
+    <script>
+
+        function print() {
+            console.log(Math.random());
+        }
+
+        window.onload = function() {
+
+            console.log("Page loaded, now starting time taking process!");
+            let sum = 0;
+            for (let i = 0; i < 5000000000; i++) {
+                sum += i;
+            }
+
+            console.log("Time taking process completed");
+        }
+
+
+    </script>
+</body>
+</html>
