@@ -30,8 +30,8 @@ This repo is intended for my students for quick-reference. All the daily session
 - [1-Aug-JS-Part-6-Arrays]
 - [4-Aug-JS-Part-7-Objects]
 - [5-Aug-JS-Part-8-Prototype-Inheritance-OOPS]
-- [10-Aug-JS-Part-9-Math-String-Date]
-
+- [17-Aug-JS-Part-10-BOM]
+- [18-Aug-JS-Part-11-DOM-Basics-And-Selectors]
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
@@ -51,4 +51,5 @@ This repo is intended for my students for quick-reference. All the daily session
   [4-Aug-JS-Part-7-Objects]: <https://github.com/NeetishRaj/dreamers_batch/tree/4-Aug-JS-Part-7-Objects>
   [5-Aug-JS-Part-8-Prototype-Inheritance-OOPS]: <https://github.com/NeetishRaj/dreamers_batch/tree/5-Aug-JS-Part-8-Prototype-Inheritance-OOPS>
   [10-Aug-JS-Part-9-Math-String-Date]: <https://github.com/NeetishRaj/dreamers_batch/tree/10-Aug-JS-Part-9-Math-String-Date>
-
+  [17-Aug-JS-Part-10-BOM]: <https://github.com/NeetishRaj/dreamers_batch/tree/17-Aug-JS-Part-10-BOM>
+  [18-Aug-JS-Part-11-DOM-Basics-And-Selectors]: <https://github.com/NeetishRaj/dreamers_batch/tree/18-Aug-JS-Part-11-DOM-Basics-And-Selectors>
