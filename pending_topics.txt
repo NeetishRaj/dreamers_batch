@@ -5,5 +5,4 @@ Method Chaining
 shallow copy vs deep copy
 var, let and const differences
 String.codePointAt() for understanding encoding schemes
-Type Casting: Impicit vs Explicit
 
