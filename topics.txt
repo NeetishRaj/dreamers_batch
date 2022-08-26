@@ -77,4 +77,45 @@ Q. Guess the output
         console.log(somestr);
     })
 
-A.
+A. abcxyz123
+
+
+Q. What is callback hell and how to avoid it?
+A. Callback hell is problematic situation when working with async code using
+    callbacks. We end up with a code with deep nested callbacks which makes 
+    code maintainability a difficult task.
+
+    We can use Promises to avoid callback hells.
+
+
+Q. Guess the outut.
+
+    const promise = new Promise((a, b) => {
+        b(25);
+        a(23);
+    });
+
+    promise.then(
+        (response) => {
+            console.log("All is well : " + response);
+        },
+        (response) => {
+            console.log("Something failed : " + response);
+        })
+
+A. Something failed : 25
+
+
+
+Q. Guess the outut.
+
+    const promise = new Promise((a, b) => {
+        a("hello");
+    });
+
+    promise.then(
+        (response) => {
+            console.log(response);
+        })
+
+A. hello
