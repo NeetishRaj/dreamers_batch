@@ -1,0 +1,39 @@
+Online Notepad
+##############
+
+Challenge 1:
+	Build the UI that looks exactly the same using HTML and CSS
+	 
+Challenge 2:
+    Understand of localStorage()
+
+Challenge 3: 
+    Implement autosave feature 
+
+
+Shopping Cart
+############
+
+
+Challenge 1:
+    Store the Input data. We need to create an array to store the data
+    const arr = [
+        {
+            title: "Biscuit",
+            price: 30
+        }
+    ]
+
+Challenge 2: 
+    Dynamically create a new table row when new item is added.
+
+Challenge3: 
+    Updating the sum of all prices in the totalPrice row.
+
+
+
+Important Topics
+################
+
+localStorage is permanet storage solution provided by Browser itself.
+using localStorage we can preserve data in the browser even if the browser is closed.
