@@ -65,8 +65,6 @@ This repo is intended for my students for quick-reference. All the daily session
   [23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation]: <https://github.com/NeetishRaj/dreamers_batch/tree/23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation>
   [25-Aug-JS-Part-14-Async-Callback-Promise]: <https://github.com/NeetishRaj/dreamers_batch/tree/25-Aug-JS-Part-14-Async-Callback-Promise>
   [JS-In-Class-Assignments-2]: <https://github.com/NeetishRaj/dreamers_batch/tree/JS-In-Class-Assignments-2>
- [19-Aug-JS-Part-12-DOM-Events]: <https://github.com/NeetishRaj/dreamers_batch/tree/19-Aug-JS-Part-12-DOM-Events>
- [JS-In-Class-Assignments-1]: <https://github.com/NeetishRaj/dreamers_batch/tree/JS-In-Class-Assignments-1>
- [23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation]: <https://github.com/NeetishRaj/dreamers_batch/tree/23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation>
+ 
  
 
