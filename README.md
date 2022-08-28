@@ -32,6 +32,12 @@ This repo is intended for my students for quick-reference. All the daily session
 - [5-Aug-JS-Part-8-Prototype-Inheritance-OOPS]
 - [17-Aug-JS-Part-10-BOM]
 - [18-Aug-JS-Part-11-DOM-Basics-And-Selectors]
+- [19-Aug-JS-Part-12-DOM-Events]
+- [JS-In-Class-Assignments-1]
+- [23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation]
+- [25-Aug-JS-Part-14-Async-Callback-Promise]
+- [JS-In-Class-Assignments-2]
+
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
@@ -53,3 +59,12 @@ This repo is intended for my students for quick-reference. All the daily session
   [10-Aug-JS-Part-9-Math-String-Date]: <https://github.com/NeetishRaj/dreamers_batch/tree/10-Aug-JS-Part-9-Math-String-Date>
   [17-Aug-JS-Part-10-BOM]: <https://github.com/NeetishRaj/dreamers_batch/tree/17-Aug-JS-Part-10-BOM>
   [18-Aug-JS-Part-11-DOM-Basics-And-Selectors]: <https://github.com/NeetishRaj/dreamers_batch/tree/18-Aug-JS-Part-11-DOM-Basics-And-Selectors>
+
+  [19-Aug-JS-Part-12-DOM-Events]: <https://github.com/NeetishRaj/dreamers_batch/tree/19-Aug-JS-Part-12-DOM-Events>
+  [JS-In-Class-Assignments-1]: <https://github.com/NeetishRaj/dreamers_batch/tree/JS-In-Class-Assignments-1>
+  [23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation]: <https://github.com/NeetishRaj/dreamers_batch/tree/23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation>
+  [25-Aug-JS-Part-14-Async-Callback-Promise]: <https://github.com/NeetishRaj/dreamers_batch/tree/25-Aug-JS-Part-14-Async-Callback-Promise>
+  [JS-In-Class-Assignments-2]: <https://github.com/NeetishRaj/dreamers_batch/tree/JS-In-Class-Assignments-2>
+ 
+ 
+
