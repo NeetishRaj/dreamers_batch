@@ -1,0 +1,180 @@
+JS Part 15: Try-catch, Async Await
+##################################
+
+
+Try catch 
+    Used for Error handling
+
+    Syntax: 
+        try {
+            // Error prone code here
+        } catch(err) {
+            // Error handling code here
+        } finally {
+
+        }
+
+Catch block in Promise chains
+
+    some_promise
+        .then(() => {
+            // some operation
+        })
+        .then(() => {
+            // some operation
+        })
+        .catch((error) => {
+            // handle the error here
+        })
+        .finally(() => {
+
+        })
+
+
+Async await
+
+
+Important Questions
+###################
+
+Q. Guess the output
+
+    try {
+        const a = 23;
+        a += 2;
+        console.log(a);
+    }  catch(error) {
+        console.log(a);
+    }
+
+A. undefined
+
+Q. Guess the output
+    let a = 10;
+    try {
+        console.log(a);
+        a += 2;
+    }  catch(error) {
+        console.log(a);
+    }
+    console.log(a);
+
+A. 
+    10
+    12
+
+
+Q. Guess the output
+    const a = 10;
+    try {
+        console.log(a);
+        a += 2;
+    }  catch(error) {
+        console.log(a);
+    }
+    console.log(a);
+
+A. 
+    10
+    10
+    10
+
+
+Q. Guess the output
+    let str = 'a';
+    try {
+        console.log(str);
+        st.concat('b');
+    }  catch(error) {
+        console.log(str);
+        str = str.concat('c');
+    } finally {
+        str += 'd';
+    }
+    console.log(str);
+
+A. 
+    a
+    a
+    acd
+
+
+Q. Guess the output
+
+    new Promise((a) => {
+        a(10);
+    })
+    .then(val => {
+        console.log(val * 10);
+        return val * 10;
+    })
+    .then(val => {
+        console.log(val * 20);
+    })
+    .catch((e) => {
+        console.log(a);
+    })
+    .finally((a) => {
+        console.log(a);
+    })
+
+A. 
+    100
+    2000
+    undefined
+
+
+Q. Guess the output
+
+    new Promise((a) => {
+        a(10);
+    })
+    .then(val => {
+        console.log(val * 10);
+        return val * 10;
+    })
+    .then(val => {
+        console.log(val * 20);
+        val.NonExisitingFunction();
+    })
+    .catch((e) => {
+        console.log("Catch Block");
+    })
+    .finally((a) => {
+        console.log("Finally Block");
+    })
+
+A. 
+    100
+    2000
+    Catch Block
+    Finally Block
+
+
+Q. Guess the output
+
+    new Promise((a, b) => {
+        b(20);
+        a(10);
+    })
+    .then(val => {
+        console.log(val * 10);
+        return val * 10;
+    })
+    .then(val => {
+        console.log(val * 20);
+        val.NonExisitingFunction();
+    })
+    .catch((e) => {
+        console.log("Catch Block");
+    })
+    .finally((a) => {
+        console.log("Finally Block");
+    })
+
+A. 
+    Catch Block
+    Finally Block
+    
+    
+
