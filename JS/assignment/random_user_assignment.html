@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        html, body {
+            text-align: center;
+        }
+
+        img {
+            margin: 30px;
+        }
+
+        #additionalInfo{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="personName"></h1>
+        <div>
+            <img src="" id="personImage" alt="">
+        </div>
+
+        <div>
+            <button onclick="showAge()" data-attr="age">Age</button>
+            <button onclick="showEmail()" data-attr="email">Email</button>
+            <button onclick="showPhone()" data-attr="phone">Phone</button>
+        </div>
+
+        <div id="additionalInfo">
+            
+        </div>
+
+        <div>
+            <button id="newUser" onclick="load_new_user()">Get New user</button>
+        </div>
+        
+    </div>
+
+    <script>
+
+
+        /*
+        1.  Get the user data using fetch()
+
+        2. Show only fullname(firstname + lastname) and image (use large one)
+
+        3. Display 3 buttons
+
+            a. Age ('data-attr': 'age')
+            b. Email ('data-attr': 'email')
+            c. Phone ('data-attr': 'phone')
+
+        4. Create a section(initially empty) which shows additional 
+            info (age or Email or Phone) based on button click
+
+        5. Create a button Get User with id ("getUser")
+            This makes a new fetch call to get a new user
+
+        */
+
+        let current_user, personName, personImage, additionalInfo;
+
+        function load_new_user() {
+            fetch('https://randomuser.me/api/')
+                .then(response => response.json())
+                .then(data => {
+                    current_user = data.results[0];
+                    console.log(current_user);
+
+
+                    personName.textContent = current_user.name.first + " " + current_user.name.last;
+                    personImage.src = current_user.picture.large;
+                })
+        }
+
+        function showAge() {
+            additionalInfo.textContent = current_user.dob.age;
+
+        }
+
+        function showEmail() {
+            additionalInfo.textContent = current_user.email;
+        }
+
+        function showPhone() {
+            additionalInfo.textContent = current_user.phone;
+        }
+
+        function init() {
+
+            personName = document.getElementById('personName');
+            personImage = document.getElementById('personImage');
+            additionalInfo = document.getElementById('additionalInfo');
+
+            // Get a new user
+            load_new_user();
+        }
+
+        window.onload = init;
+
+    </script>
+    
+</body>
+</html>

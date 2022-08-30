@@ -2,7 +2,7 @@ JS Part 15: Try-catch, Async Await
 ##################################
 
 
-Try catch 
+Try catch  finally
     Used for Error handling
 
     Syntax: 
@@ -11,7 +11,7 @@ Try catch
         } catch(err) {
             // Error handling code here
         } finally {
-
+            // This will always be executed
         }
 
 Catch block in Promise chains
@@ -27,12 +27,38 @@ Catch block in Promise chains
             // handle the error here
         })
         .finally(() => {
-
+            // this will always be executed
         })
 
 
 Async await
+    An async function is a function declared with the async keyword,
+    and the await keyword is permitted within it. The async and await 
+    keywords enable asynchronous, promise-based behavior to be written
+    in a cleaner style, avoiding the need to explicitly configure 
+    promise chains.
 
+
+JSON
+    It's a Data exchange format based on JavaScript object.
+    It's basically a string that looks exactly like a JS object.
+
+    Data types supported by JSON
+        Array
+        Objects
+        String
+        Number
+        boolean
+        null
+
+    JSON notation
+        Syntax:
+            {
+                "prop": "value"
+            }
+            
+    JSON.stringify()
+    JSON.parse()
 
 Important Questions
 ###################
@@ -175,6 +201,52 @@ Q. Guess the output
 A. 
     Catch Block
     Finally Block
+
+
+Q. What's the problem with this code?
+
+    async function print_hello_async() {
+        return new Promise((a, b) => {
+            a("hello there");
+        })
+    }
+
+    const result = await print_hello_async();
+    console.log(result);
+
+A. This code has 2 problems
+
+    1. print_hello_async function doesn't need to have a 'async' keyword as 
+        we are not doing any await operation inside it.
+
+    2. we are doing await operation in the global scope.
+        await operationns require an async function  wrapper.
+
+
+Q. How to make this code working.
+
+    function wait() {
+        return new Promise((a, b) => {
+            setTimeout(() => {
+                a(20);
+            }, 2000)
+        })
+    }
+
+    async function func_async() {
+        const result = wait();
+
+        console.log(result); // 20
+    }
+
+    func_async();
+
+A.  use await inside func_async
+     const result = await wait();
+
+
+
+
     
     
 
