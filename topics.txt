@@ -1,0 +1,149 @@
+Javascript Part 16: ES6
+#######################
+
+Quick Reference: http://es6-features.org/#DefaultParameterValues
+
+What is ES6?
+
+    It's Javascript version released in 2015
+    Full form is EcmaScript version 6.
+
+    ES1
+    ES2
+    ES3
+    ES5 
+    ES6 - 2015
+    ES7 - 2016
+    ES8 - 2017
+    ES9 - 2018
+    ES10 - 2019
+    ES11 - 2020
+    ES12 - 2021
+    ES13 - 2022
+
+    The versions after ES6 (including) are also called as ES6+ versions
+
+
+
+
+Spread and Rest operator (...)
+
+Newer for loops
+    for-in loop
+    for-of loop
+
+Property shorthand
+    syntax:
+        var x = 0, y = 0
+        obj = { x, y }  
+        
+Destructuring
+    In Arrays
+    In Objects
+
+Getter and Setter
+
+
+Class
+    constructor
+    super
+    static methods
+    method overriding
+    Inheritance
+
+this 
+    lexical scoping of this in arrow functions
+
+
+
+
+
+
+
+Important Points
+################
+
+
+Q. Guess the output
+
+    const obj = {
+        ids: [10, 21, 11, 31, 41],
+        area: 'zone1'
+    }
+    const obj2 = {level: 3}
+    console.log({...obj, ...obj2})
+
+A. 
+    {
+        ids: [10, 21, 11, 31, 41],
+        area: 'zone1',
+        level: 3
+    }
+
+
+Q. Guess the output
+
+    function find_length(...args) {
+        return args.length;
+    }
+
+    console.log(find_length(1, 2, 3, [1, 2, 3]))
+
+A. 4 
+    because args is [1, 2, 3, [1, 2, 3]]
+    and args.length is 4
+
+
+Q. Guess the output
+
+    function find_length(...args) {
+        return args.length;
+    }
+    const arr = ['a', 'b', 'c'];
+
+    console.log(find_length(1, 2, 3, ...arr))
+
+A. 6 
+    because ars is [1, 2, 3, 'a', 'b', 'c']
+    and args.length is 6
+
+
+Q. Guess the output
+
+    const employee = {
+        name: 'Roger',
+        department: 'sales'
+    }
+
+    const contacts = ['david']
+
+    const new_employee = {
+        ...employee,
+        contacts: [...contacts]
+    }
+
+    console.log(new_employee);
+
+A.
+    {
+        name: 'Roger',
+        department: 'sales',
+        contacts: ['david']
+    }
+
+
+Q. Guess the output
+
+    const a = {a: 1};
+    const b = {b: 2};
+    const c = {c: 2};
+
+
+    console.log({a: a.a, ...b, ...c});
+
+A. 
+    {
+        a: 1,
+        b: 2,
+        c: 2
+    }
