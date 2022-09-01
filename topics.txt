@@ -29,14 +29,17 @@ What is ES6?
 Spread and Rest operator (...)
 
 Newer for loops
-    for-in loop
-    for-of loop
+    for-in loop - For objects
+        'in' keyword
+
+    for-of loop - For arrays
 
 Property shorthand
     syntax:
         var x = 0, y = 0
-        obj = { x, y }  
-        
+        obj = { x, y }  is same as
+        obj = {x: x, y: y}
+
 Destructuring
     In Arrays
     In Objects
@@ -147,3 +150,86 @@ A.
         b: 2,
         c: 2
     }
+
+
+Q. What are the ways to iterate over the keys of an Object?
+
+A.
+    1. Object.keys() -> returns all the keys of the object as an array.
+    2. Object.entries() -> returns all the key-value pairs in the object as an array.
+    3. for-in loop to iterate over the keys of an object.
+
+
+
+Q. Guess the output.
+
+    const obj1 = {a: 1, b: 2};
+    const obj2 = {...obj1, d: 4};
+
+    for(const key in obj2) {
+        console.log(obj2[key]);
+    }
+
+A. 
+    1
+    2
+    4
+
+
+Q. Guess the output.
+
+    const arr = [{a:1}, {b:2}, {c: 2}];
+    const item = [...arr][2];
+
+    console.log(item);
+
+    for(const item of arr) {
+        console.log(item['a']);
+    }
+
+A.
+    {c: 2}
+    1
+    undefined
+    undefined
+
+
+Q. Guess the output
+
+    const a = 1;
+    const b = 2, c = 3;
+
+    console.log({a, b, c});
+
+A. 
+    {
+        a: 1,
+        b: 2,
+        c: 3
+    }
+
+
+Q.  Guess the output
+
+    const {c} = {a: 1, b: 2, c: 3};
+    console.log( c ** 2);
+
+A. 9
+
+
+Q. Guess the output
+
+    const arr = ['a', 'b', 'c'];
+    const obj = {a: 1, b: 2, c: 3};    
+
+    const [a0, a1, a2] = arr;
+    const {a, b, c} = obj;
+
+    console.log(a0.repeat(a));
+    console.log(a1.repeat(b));
+    console.log(a2.repeat(c));
+
+A. 
+    a
+    bb
+    ccc
