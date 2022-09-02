@@ -4,4 +4,3 @@ call, apply and bind methods.
 Method Chaining
 shallow copy vs deep copy
 String.codePointAt() for understanding encoding schemes
-

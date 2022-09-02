@@ -1,0 +1,159 @@
+JS Part 17: class
+##################
+
+
+Getter and Setter
+
+
+Class
+    constructor
+    super
+    static methods
+    method overriding
+    Inheritance
+
+this 
+    lexical scoping of this in arrow functions
+
+
+Important Points
+################
+
+
+Q. Why use setters and getters?
+A. When we know for sure that some property inside a class/object is going to 
+    be used for read/write then it's helpful to implement them using Getters
+    and setters.
+
+    Benefits.
+
+    1. It doesn't look any different to the class/object user than a normal object.
+    2. We can do validation in setters before writing the value.
+    3. We can do any other operation on write or read.
+
+
+Q. Guess the ouptut
+
+    const Obj = {
+        get prop() { return 10;},
+        set prop(value) { this.prop  = value;}
+    }
+
+    console.log(Obj.prop);
+    Obj.prop = 20;
+    console.log(Obj.prop);
+
+A.  10
+    Stackoverflow Error
+
+
+Q. Guess the ouptut
+
+    const Obj = {
+        get prop() { return 10;},
+        set prop(value) { this._prop  = value;}
+    }
+
+    console.log(Obj.prop);
+    Obj.prop = 20;
+    console.log(Obj.prop);
+
+A.  10
+    10
+
+Q. Guess the ouptut
+
+    const Obj = {
+        _prop: 10,
+        get prop() { return this._prop;},
+        set prop(value) { this._prop  = value;}
+    }
+
+    console.log(Obj.prop);
+    Obj.prop = 20;
+    console.log(Obj.prop);
+
+A.  10
+    20
+
+
+Q. Guess the ouptut
+
+    const Obj = {
+        get prop1() { return 'z'},
+        get prop2() { return 'c'},
+        get prop4() { return 'f'}
+    }
+
+    console.log(Obj.prop1);
+    console.log(Obj.prop2);
+    console.log(Obj.prop4);
+
+A.  z
+    c
+    f
+
+
+Q. Guess the ouptut
+
+    const Obj = {
+        get prop1() {
+            console.log(this.prop2); 
+            return 'z';
+        },
+        get prop2() { return 'c'},
+        get prop4() { return 'f'}
+    }
+
+    console.log(Obj.prop1);
+    console.log(Obj.prop2);
+    console.log(Obj.prop4);
+
+A.  c
+    z
+    c
+    f
+
+
+Q.  Guess the output 
+
+    class Person {}
+
+    console.log(new Person('Jim', 28));
+
+A.  Person {}
+
+    Empty person object without any properties.
+
+
+Q.  Guess the output 
+
+    class Person {
+        constructor(n, a) {
+            this.name = n;
+            this.age = a;
+        }
+    }
+
+    console.log(new Person('Jim', 28));
+
+A.  Person {name: 'Jim', age: 28}
+
+
+Q.  Guess the output 
+
+    class Person {
+        constructor(n) {
+            this.name = n;
+        }
+
+        static name = 'Harry';
+    }
+
+    const person = new Person('Jim');
+    
+    console.log(person.name);
+    console.log(Person.name);
+
+A.  Jim
+    Harry
