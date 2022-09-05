@@ -11,6 +11,7 @@ Class
     static methods
     method overriding
     Inheritance
+    getters and setters in classes
 
 this 
     lexical scoping of this in arrow functions
@@ -157,3 +158,107 @@ Q.  Guess the output
 
 A.  Jim
     Harry
+
+
+Q. Is this a valid code?
+
+    class A {}
+    class B extends A {}
+
+    const b = new B();
+
+A. Yes
+
+
+Q. Is this a valid code?
+
+    class A {}
+    class B extends A {
+        constructor() {
+            this.prop = 1;
+        }
+    }
+
+    const b = new B();
+
+A. Yes
+
+
+Q. Guess Output?
+
+    class Person {
+        constructor(e) {
+            console.log('c');
+            console.log(e);
+        }
+    }
+
+    class Employee extends Person {
+        constructor() {
+            console.log('d');
+            super('e');
+        }
+    }
+
+    const e = new Employee();
+
+A. 
+    d
+    c
+    e
+
+
+Q. Guess Output?
+    let num  = 10;
+
+    class A {
+        constructor() {
+            num += 10;
+        }
+    }
+
+    class B extends A {
+        constructor() {
+            num += 10;
+            super();
+        }
+    }
+
+    const a = new A();
+    console.log(num);
+
+    const b = new B();
+    console.log(num);
+
+A. 
+    20
+    40
+
+
+Q. Guess the output.
+
+    let str = 'hey ';
+    class A {
+        constructor() {str += 'guys! ';}
+    }
+
+    class B extends A {
+        constructor() {
+            str += `what's `;
+            super();
+        }
+    }
+
+    class C extends B {
+        constructor() {
+            str += 'up ';
+            super();
+        }
+    }
+
+    const c = new C();
+    console.log(str);
+
+A.
+    hey up what's guys!
+
