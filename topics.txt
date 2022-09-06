@@ -13,9 +13,6 @@ Class
     Inheritance
     getters and setters in classes
 
-this 
-    lexical scoping of this in arrow functions
-
 
 Important Points
 ################
