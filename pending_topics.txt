@@ -2,6 +2,7 @@ First class functions
 Arrow functions: lexical scoping of 'this' inside arrow function.
 call, apply and bind methods.
 Method Chaining
-shallow copy vs deep copy
-String.codePointAt() for understanding encoding schemes
 
+String.codePointAt() for understanding encoding schemes
+Promise.all()
+shallow copy vs deep copy

@@ -1,0 +1,108 @@
+Advanced JS Part 1
+##################
+
+
+Everything about functions
+
+    - lexical scoping of 'this' in arrow functions.
+    - currying 
+    - method chaining
+    - IIFE (Immediately invoked function expressions)
+        Syntax:
+        (function() {
+
+        })()
+    - call, apply and bind methods
+
+Ultimate JS code  example
+    - Memoization
+
+
+Consfusing terms related to Functions
+
+    - Higher order functions
+    - Anonymous functions
+    - lambda functions
+    - First class functions
+    - Named function and function expression
+
+
+
+
+Important Points
+################
+
+
+Q. Guess the output.
+
+    let num = 10;
+    const obj = {add: () => ++this.num}
+
+    console.log(obj.add());
+
+A. NaN 
+    because ++ on undefined is NaN
+
+
+Q. Guess the output.
+    var num = 10;
+    const obj = {add: () => ++this.num}
+
+    console.log(obj.add());
+
+A. 11
+
+
+Q. Guess the output.
+    var num = 10;
+    const obj = {
+        add: function() {
+            return ++this.num;
+        }
+    }
+
+    console.log(obj.add());
+
+A. NaN
+
+    Because Obj.num is undefined
+    and ++ on undefined is NaN
+
+
+
+Q. Guess the output
+
+    const func = (a) => () => (b) => () => a * b;   
+    console.log(func(10)(20)(30)(40));
+
+A.  300
+
+    const func = function(a) {
+        return function () {
+            return function (b) {
+                return function () {
+                    return a * b;
+                }
+            }
+        }
+    }
+
+
+Q. Guess the output.
+
+    const arr = [1, 2, 3, 4];
+
+    const result = arr
+        .join('-')
+        .repeat(2)
+        .toUpperCase()
+        .split('');
+
+    console.log(result[6]);
+
+A. 4
+
+    arr.join('-')                   --> '1-2-3-4'
+    '1-2-3-4'.repeat(2)             --> '1-2-3-41-2-3-4'
+    '1-2-3-41-2-3-4'.toUpperCase()  --> '1-2-3-41-2-3-4'
+    '1-2-3-41-2-3-4'.split('')      -->  ['1', '-', '2', '-', '3', '-', '4', '1', '-', '2', '-', '3', '-', '4']
