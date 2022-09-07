@@ -9,22 +9,13 @@ Everything about functions
     - method chaining
     - IIFE (Immediately invoked function expressions)
         Syntax:
-        (function() {
+            (function() {
 
-        })()
+            })()
     - call, apply and bind methods
-
-Ultimate JS code  example
-    - Memoization
+        We use these functions to bind with 'this'
 
 
-Consfusing terms related to Functions
-
-    - Higher order functions
-    - Anonymous functions
-    - lambda functions
-    - First class functions
-    - Named function and function expression
 
 
 
@@ -106,3 +97,102 @@ A. 4
     '1-2-3-4'.repeat(2)             --> '1-2-3-41-2-3-4'
     '1-2-3-41-2-3-4'.toUpperCase()  --> '1-2-3-41-2-3-4'
     '1-2-3-41-2-3-4'.split('')      -->  ['1', '-', '2', '-', '3', '-', '4', '1', '-', '2', '-', '3', '-', '4']
+
+
+
+Q. Guess the output
+
+    const a = 40;
+    (function(a) {
+        console.log(a);
+    })(20);
+
+A. 20
+
+Q. Guess the output
+
+    
+    let a = (function(a) {
+        return a;
+    })(20);
+
+    console.log(a);
+
+A. 20
+
+
+Q. Guess the output
+
+    
+    let a = (function(a) {
+        return {a};
+    })(20);
+
+    console.log(a);
+
+A. {a: 20}
+
+
+Q. Guess the output
+
+    const obj1 = {a: 1, b: 2};
+    const obj2 = {a: 10, b: 20};
+
+    function add() {
+        return this.a + this.b;
+    }
+
+    console.log(add.call(obj1) + add.apply(obj2));
+
+A. 33
+
+    Because:
+        add.call(obj1) = 3
+        add.apply(obj2) = 30
+
+
+
+Q. Correct the 'print_address' to get proper output without undefined
+    like this - 'City: LA, Country: USA
+
+        function print_address() {
+            console.log(`City: ${this.city}, Country: ${this.country}`);
+        }
+
+        const rahul = {
+            name: 'rahul',
+            age: 22,
+            address: {
+                street: '24 avenue',
+                city: 'LA',
+                country: 'USA'
+            }
+        }
+
+        print_address.bind(rahul)();
+
+A. 
+    function print_address() {
+        console.log(`City: ${this.address.city}, Country: ${this.address.country}`);
+    }
+
+
+Q.  Guess the output
+
+    const obj1 = {a: 1}
+    const obj2 = {a: 10}
+
+    function add_10(num) {
+        return this.a + num + 10;
+    }
+
+    console.log(add_10.bind(obj1)(20)); 
+    console.log(add_10.bind(obj2)(25));
+
+A. 
+    31
+    45
+
+    because
+        add_10.bind(obj1)(20) - 1 + 20 + 10  = 31
+        add_10.bind(obj2)(25) - 10 + 25 + 10 = 45
