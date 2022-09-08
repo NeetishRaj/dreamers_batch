@@ -1,0 +1,53 @@
+N candies
+
+G groups of candies (all groups will have <= 3 candies)
+
+
+Round 1: 
+N = 8
+G = 3
+a b c,    p,q, r     x, y
+
+crushing: a, p and x
+CrusH cost : 3 x G = 9$
+
+
+Round 2: 
+N = 5
+G = 2
+b,c,q,   r,y
+
+crushing: b and r
+CrusH cost : 2 x G = 4$
+
+
+Round 3: 
+N = 3
+G = 1
+c,q,y
+
+crushing: c
+CrusH cost : 1 x G = 1$
+
+
+Round 4: 
+N = 2
+G = 1
+q,y
+
+crushing: q
+CrusH cost : 1 x G = 1$
+
+Round 5: 
+N = 1
+G = 1
+y
+
+crushing: y
+CrusH cost : 1 x G = 1$
+
+
+Total cost: 9 + 4 + 1 + 1 + 1 = 16$
+
+
+

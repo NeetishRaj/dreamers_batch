@@ -1,0 +1,29 @@
+Advanced JS Part 2
+##################
+
+
+Ultimate JS code  example
+    - Memoization
+        - Closure
+        - Higher order functions
+        - Decorator pattern
+        - callback
+
+
+Consfusing terms related to Functions
+
+    - Higher order functions
+    - Anonymous and named functions
+    - lambda functions
+    - First class functions
+    - function expression vs declaration
+    - Pure and Impure functions
+
+
+Patterns
+    These are good practices in programming that have been documented after years of programming.
+    "Design patterns" are impressive ways of organizing a code in specific way.
+     Examples of design patterns - Decorator pattern, Singleton pattern, DI
+
+Anti-Patterns
+    These are bad practices in programming that have been documented after years of programming.
