@@ -32,3 +32,9 @@ Patterns
 
 Anti-Patterns
     These are bad practices in programming that have been documented after years of programming.
+
+
+
+jQuery library
+    Source code Link: 
+        https://code.jquery.com/jquery-3.6.1.js
