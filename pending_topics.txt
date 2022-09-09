@@ -1,4 +1,2 @@
-First class functions
-shallow copy vs deep copy
-String.codePointAt() for understanding encoding schemes
+
 

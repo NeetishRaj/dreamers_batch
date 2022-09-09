@@ -20,6 +20,11 @@ Consfusing terms related to Functions
     - Pure and Impure functions
 
 
+JS strict mode
+    Syntax: 
+        'use strict';
+
+
 Patterns
     These are good practices in programming that have been documented after years of programming.
     "Design patterns" are impressive ways of organizing a code in specific way.
