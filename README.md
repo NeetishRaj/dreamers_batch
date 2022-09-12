@@ -37,7 +37,10 @@ This repo is intended for my students for quick-reference. All the daily session
 - [23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation]
 - [25-Aug-JS-Part-14-Async-Callback-Promise]
 - [JS-In-Class-Assignments-2]
-
+- [29-Aug-JS-Part-15-try-catch-async-await]
+- [31-Aug-Part-16-ES6]
+- [2-Sep-JS-Part-17-ES6-Continued-Class]
+- [6-Sep-Advanced-JS-Part-1]
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
@@ -65,6 +68,11 @@ This repo is intended for my students for quick-reference. All the daily session
   [23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation]: <https://github.com/NeetishRaj/dreamers_batch/tree/23-Aug-JS-Part-13-Events-Bubble-Capture-Delegation>
   [25-Aug-JS-Part-14-Async-Callback-Promise]: <https://github.com/NeetishRaj/dreamers_batch/tree/25-Aug-JS-Part-14-Async-Callback-Promise>
   [JS-In-Class-Assignments-2]: <https://github.com/NeetishRaj/dreamers_batch/tree/JS-In-Class-Assignments-2>
+  [29-Aug-JS-Part-15-try-catch-async-await]: <https://github.com/NeetishRaj/dreamers_batch/tree/29-Aug-JS-Part-15-try-catch-async-await>
+  [31-Aug-Part-16-ES6]: <https://github.com/NeetishRaj/dreamers_batch/tree/31-Aug-Part-16-ES6>
+  [2-Sep-JS-Part-17-ES6-Continued-Class]: <https://github.com/NeetishRaj/dreamers_batch/tree/2-Sep-JS-Part-17-ES6-Continued-Class>
+  [6-Sep-Advanced-JS-Part-1]: <https://github.com/NeetishRaj/dreamers_batch/tree/6-Sep-Advanced-JS-Part-1>
+ 
  
  
 
