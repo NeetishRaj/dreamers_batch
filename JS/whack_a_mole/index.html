@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Whack a mole</h1>
+    
+        <div class="game-stats">
+            <h3>
+                Score: 
+                <h3 id="score">0</h3>
+            </h3>
+            
+            <h3>
+                Timer:
+                <h3 id="time-left">30</h3>
+            </h3>
+        </div>
+
+        <!-- 9 cells -->
+        <div class="grid">
+            <div class="row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+            <div class="row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+    
+        <!-- two buttons -->
+
+        <div class="buttons">
+            <button id="start" onclick="start_game()">Start</button>
+            <button id="reset" onclick="reset_game()">Reset</button>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        // change mole postion in 1 second
+        const TIME_LIMIT = 30;
+        const TIME_INTERVAL = 1000; //1000 ms
+
+        let interval;
+        let timer = TIME_LIMIT;
+        let score = 0;
+
+
+
+        function start_game() {
+            // start a timer
+            interval = setInterval(() => {
+                timer -= 1;
+                document.querySelector('#time-left').textContent = timer;
+
+                // Remove previous mole
+                const mole_div = document.querySelector('.mole');
+                
+                if(mole_div) {
+                    mole_div.classList.remove('mole');
+                }
+                
+                // start showing mole in random square
+                const squares = document.querySelectorAll(".square");
+
+                const rand_index = Math.floor(Math.random() * 9);
+
+                squares[rand_index].classList.add('mole');
+
+                // TO-DO: stop the game if timer ends
+
+            }, TIME_INTERVAL);
+
+        }
+
+        function reset_game() {
+
+            //TO-DO: add logic for reset game
+
+            // timer resets 
+
+            // score resets
+
+            // mole stops showing up
+        }
+
+        function init() {
+            //  Add a click eventlistener to all the squares to whach the mole.
+
+
+            const squares = document.querySelectorAll('.square');
+
+            squares.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    console.log('whacked');
+                    if(item.classList.contains('mole')) {
+                        // Mole is whacked
+                        score += 1;
+
+                        document.querySelector('#score').textContent = score;
+                        console.log('whacked the  mole!');
+                    }
+                })
+            })
+
+
+        }
+        window.onload = init;
+    </script>
+</body>
+</html>
