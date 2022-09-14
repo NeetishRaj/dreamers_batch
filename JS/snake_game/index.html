@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="gameContainer">
+        <div class="food"></div>
+
+        <div class="snakeBodyPixel"></div>
+    </div>
+    <h2>Score : <span class="scoreBoard">0</span></h2>
+
+    <script>
+        const INTERVAL_TIME = 100;
+
+        let snake;
+        let snake_x = 0, snake_y = 200;
+        let food_x = 0, food_y = 0;
+        let direction = "R";
+        let score = 0;
+
+        function move() {
+
+            setInterval(() => {
+
+                switch (direction) {
+                    case "R":
+                        snake_x += 10;
+
+                        if (snake_x >= 400) {
+                            snake_x = 0;
+                        }
+                        break;
+
+                    case "L":
+                        snake_x -= 10;
+
+                        if (snake_x < 0) {
+                            snake_x = 400;
+                        }
+
+                        break;
+
+                    case "U":
+                        snake_y -= 10;
+
+                        if (snake_y < 0) {
+                            snake_y = 400;
+                        }
+
+                        break;
+
+                    case "D":
+                        snake_y += 10;
+
+                        if (snake_y >= 400) {
+                            snake_y = 0;
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+
+                // check if food is there 
+                if(snake_x === food_x && snake_y === food_y){
+                    create_random_food();
+                    score += 1;
+                    document.querySelector('.scoreBoard').textContent = score;
+                }
+
+                snake.style.left = snake_x + 'px';
+                snake.style.top = snake_y + 'px';
+
+            }, INTERVAL_TIME)
+
+        }
+
+        function create_random_food() {
+            food_x = Math.floor(Math.random() *  40) *  10;
+            food_y = Math.floor(Math.random() *  40) *  10;
+
+            const food = document.querySelector('.food');
+
+            food.style.left = food_x + 'px';
+            food.style.top = food_y + 'px';
+        }
+
+        function init() {
+
+            snake = document.querySelector('.snakeBodyPixel');
+
+            direction = 'D'
+            move();
+
+
+            window.addEventListener('keydown', (e) => {
+                if(e.keyCode === 37) {
+                    direction = 'L';
+                } else if(e.keyCode === 38) {
+                    direction = 'U';
+                } else if(e.keyCode === 39) {
+                    direction = 'R';
+                } else if(e.keyCode === 40) {
+                    direction = 'D';
+                }
+            });
+
+        }
+
+
+        window.onload = init;
+
+    </script>
+</body>
+
+</html>
