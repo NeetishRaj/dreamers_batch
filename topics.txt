@@ -1,0 +1,32 @@
+React 1 : Intro
+###############
+
+What is React?
+ we write code using JSX (Javascript and XML)
+
+
+Why React?
+Most popular frontend framework in 2022.
+Most job opportunities.
+
+
+React relevance in 2022
+https://survey.stackoverflow.co/2022/#technology
+
+
+
+React official documentation
+https://reactjs.org/tutorial/tutorial.html
+
+
+
+
+Important notes
+###############
+
+
+What's unique in React code vs vanilla JS code?
+
+1. We inject all the React code in some HTML container.
+2. We need to use libraries like React, ReactDOM and babel.
+3. We had a create a React component to render HTML.
