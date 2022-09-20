@@ -1,0 +1,40 @@
+React 2: Components Concept
+############################
+
+
+
+"EVERYTHING IS A COMPONENT IN REACT"
+
+
+nodejs 
+    - get OS info using internal 'os' module
+
+npm(node package manager)
+    - create a new empty npm project
+        > npm init -y
+
+    - install dad jokes npm package
+        > npm install --save @mikemcbride/dad-jokes
+
+    node_modules folder is where all the ecxternal library code gets dumped in.
+
+    package.json is very important file which tracks all the info related to the npm
+
+npx
+    Is very similar to npm and can be used to install packages but
+    it also helps to run package specfic commands which npm cannot do.
+
+
+
+create-react-app (Documentation: https://create-react-app.dev/docs/getting-started)
+
+    create our first react app
+    > npx create-react-app my-app
+
+    go inside the project
+    > cd my-app
+
+    Run the development server
+    > npm run start
+
+    Now we can go to localhost:3000 to see the React app and see the changes live

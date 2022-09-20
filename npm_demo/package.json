@@ -1,0 +1,15 @@
+{
+  "name": "npm_demo",
+  "version": "1.0.0",
+  "description": "Simple dad joke",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Neetish Raj",
+  "license": "ISC",
+  "dependencies": {
+    "@mikemcbride/dad-jokes": "^1.0.0"
+  }
+}
