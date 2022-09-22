@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  background-color: lightgray;
+}
+
+nav {
+  background-color: darkgrey;
+
+  height: 50px;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+}
+
+nav ul {
+  list-style-type: none;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+  padding: 5px;
+
+  background-color: #999;
+}
+
+aside, main {
+  margin-top: 50px;
+}
+
+aside {
+  width: 250px;
+  height: calc(100vh - 50px);
+  background-color: #999;
+
+  position: fixed;
+  top: 0px;
+  left: 0;
+}
+
+/* We can move this CSS related to main , to Main component */
+/* main {
+  height: calc(100vh - 50px);
+  width: calc(100vw - 250px);
+
+  background-color: #ccc;
+  margin-left: 250px;
+
+  padding: 20px;
+} */
