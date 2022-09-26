@@ -1,0 +1,35 @@
+React Part 3: Virtual DOM, Fragments, React Basics
+##################################################
+
+
+Virtual DOM
+    -What is Virtual DOM?
+    -How is it different from normal Browser DOM?
+
+
+React Basics
+    - Components in React
+    - Props 
+    - rendering of components in React
+
+Fragments
+    Syntax: <> </>
+    it helps to wrap element/components together without creating any addition HTML content
+
+
+
+
+Important points
+################
+
+
+Q. How Virtual DOM makes React faster?
+A. Instead of operating on actual DOM React maintains the UI changes first in Virtual DOM
+    then brings all those changes to Actual DOM thus making the process or re-rendering 
+    very efficient.
+
+
+
+Q. What are React Fragments?
+A.  Syntax: <> </>
+    it helps to wrap element/components together without creating any addition HTML content
