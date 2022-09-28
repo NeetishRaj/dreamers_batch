@@ -1,0 +1,41 @@
+React Part 4: Building a React app from scratch
+###############################################
+
+Reference: https://blog.bitsrc.io/create-react-app-without-create-react-app-b0a5806a92
+
+
+Step 1: Create a new project folder "my-app"
+
+Step 2: Initialize a new npm project 
+
+        $ npm init
+
+Step 3: Install React dependencies/libraries
+
+        $ npm install react react-dom 
+
+Step 4: Install webpack dependencies
+        $ npm install --save-dev webpack webpack-cli webpack-dev-server
+
+Step 5: Install Babel related dev dependencies
+        $ npm install --save-dev babel-loader @babel/preset-env @babel/core @babel/plugin-transform-runtime @babel/preset-react @babel/eslint-parser @babel/runtime @babel/cli
+
+
+Step 6: Install linters and path
+        $ npm install --save-dev eslint eslint-config-airbnb-base eslint-plugin-jest eslint-config-prettier path
+
+
+Step 7: create public/index.html file with a root div
+
+Step 8: 
+
+
+
+
+Important Points
+#################
+
+Q. In package.json, what's the difference between dependencies and devDependencies?
+A. 
+
+    
