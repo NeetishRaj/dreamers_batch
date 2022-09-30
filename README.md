@@ -41,6 +41,11 @@ This repo is intended for my students for quick-reference. All the daily session
 - [31-Aug-Part-16-ES6]
 - [2-Sep-JS-Part-17-ES6-Continued-Class]
 - [6-Sep-Advanced-JS-Part-1]
+- [8-Sep-Advanced-JS-Part-2]
+- [13-Sep-JS-Projects]
+##### React
+- [19-Sep-React-1-Intro] 
+- [20-Sep-React-2-Components-Concept]
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
@@ -72,7 +77,9 @@ This repo is intended for my students for quick-reference. All the daily session
   [31-Aug-Part-16-ES6]: <https://github.com/NeetishRaj/dreamers_batch/tree/31-Aug-Part-16-ES6>
   [2-Sep-JS-Part-17-ES6-Continued-Class]: <https://github.com/NeetishRaj/dreamers_batch/tree/2-Sep-JS-Part-17-ES6-Continued-Class>
   [6-Sep-Advanced-JS-Part-1]: <https://github.com/NeetishRaj/dreamers_batch/tree/6-Sep-Advanced-JS-Part-1>
- 
- 
+ [8-Sep-Advanced-JS-Part-2]: https://github.com/NeetishRaj/dreamers_batch/tree/8-Sep-Advanced-JS-Part-2
+ [13-Sep-JS-Projects]: https://github.com/NeetishRaj/dreamers_batch/tree/13-Sep-JS-Projects
+ [19-Sep-React-1-Intro]: https://github.com/NeetishRaj/dreamers_batch/tree/19-Sep-React-1-Intro 
+ [20-Sep-React-2-Components-Concept]: https://github.com/NeetishRaj/dreamers_batch/tree/20-Sep-React-2-Components-Concept
  
 
