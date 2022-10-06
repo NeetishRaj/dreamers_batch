@@ -1,0 +1,36 @@
+React Part 5: Understanding Hooks and State variables in React
+##############################################################
+
+Hooks
+    - Reference: https://reactjs.org/docs/hooks-faq.html#which-versions-of-react-include-hooks
+
+    - Hooks are essentially JS functions which we use inside React components to do some tasks
+
+    - All Hooks will have 'use' prefix behind them.
+
+    - Example of Hooks are - useState, useContext, useEffect
+
+
+
+
+State Variables
+    - useState()  Hook is used to create state variables
+
+    - We use state variables because their value is preserved even after 
+        component re-rendering.
+
+
+
+Important Points
+################
+
+Q. What is this concept of component re-rendering in React ?
+A. React components are dynamic in nature. So based on input or changes new html content is 
+    dynamically created. 
+
+    This happens by calling the component function again and again, that calling of component
+    function which returns the html code is only called as re-rendering of components in React.
+
+
+
+

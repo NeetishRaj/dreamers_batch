@@ -1,0 +1,9 @@
+.card {
+    background-color: beige;
+
+    width: 240px;
+    height: 150px;
+    margin: 10px;
+
+    overflow: hidden;
+}
