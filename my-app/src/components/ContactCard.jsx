@@ -1,7 +1,7 @@
 import './ContactCard.css';
 
 const ContactCard = (props) => {
-    console.log(props.user);
+    // console.log(props.user);
 
     return (
         <div className='card'>

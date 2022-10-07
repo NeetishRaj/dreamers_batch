@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {
-        users.map(item => <ContactCard user={item}/>)
+        users.map((item, index) => <ContactCard key={index} user={item}/>)
       }
 
       <ContactCard user={users[0]}/>

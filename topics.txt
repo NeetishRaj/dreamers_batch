@@ -16,6 +16,8 @@ Hooks
 State Variables
     - useState()  Hook is used to create state variables
 
+        Ex: const [timer, setTimer] = useState(0);
+
     - We use state variables because their value is preserved even after 
         component re-rendering.
 
