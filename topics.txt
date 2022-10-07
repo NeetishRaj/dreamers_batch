@@ -1,0 +1,68 @@
+React Part5: Portals, Fragments and useEffect Hook
+##################################################
+
+Portals
+    Reference: https://reactjs.org/docs/portals.html
+
+	- Syntax: 
+		ReactDOM.createPortal(child, container)
+		
+	- What are React portals?
+     They are a mechanism to render HTML compoments outside the root React div.
+	
+	- Why and when use Portals?
+    Whenever we are in situations where due to styling limitations we want the component
+    to be rendered outside the main root div.
+    Example: Modals
+	
+	- Event Bubbling behavior in portals behaves in the same way.
+
+
+Fragmnents ( React.Fragment or <> </>)
+
+    Syntax: 
+        <React.Fragment>
+            <div></div>
+            <div></div>
+        <React.Fragment>
+
+        or
+
+        <>
+            <div></div>
+            <div></div>
+        </>
+
+    - We use React fragments to dave ourself from creating unwanted parent HTML elements
+        inside React components.
+
+
+
+
+useEffect() Hook
+
+    - 
+
+
+
+
+
+
+Inmportant Points
+#################
+
+
+Q. What's the difference between <React.Fragment> or <></> ?
+A. In <React.Fragment> we can also use Key attribute.
+
+    Example: 
+             const arr = ['Nina', 'Rahul', 'Alia'];
+
+             {
+                arr.map((item, index)) => (
+                    <React.Fragment key={index}>
+                        <div></div>
+                        <div></div>
+                    </React.Fragment>
+                )
+             }
