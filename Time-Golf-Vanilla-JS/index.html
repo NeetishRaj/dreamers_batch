@@ -33,63 +33,43 @@
             left: 300px;
             top: 300px;
         }
+
+        .button_container {
+            width: 100vw;
+            height: 100vw;
+
+            background-color: rgba(0, 0, 0, 0.3);
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #timer {
+            position: absolute;
+
+            top: 20px;
+            left: 400px;
+        }
     </style>
 </head>
 <body>
     <div id="ball"></div>
     <div id="hole"></div>
 
-    <div>
-
+    <div id="timer">
+        <span id="time_in_seconds">0</span> Seconds
     </div>
 
-    <div>
+    <div class="button_container">
         <button onclick="start_game()">Start</button>
     </div>
 
-    <script>
-        window.onload = () => {
-
-            let ball_x = 0, ball_y = 0;
-
-            const ball = document.getElementById('ball');
-
-            document.addEventListener('keydown', (event) => {
-                console.log(event.keyCode);
-                // 37 for left
-
-                switch (event.keyCode) {
-                    case 37:    
-                        console.log('LEFT')
-                        ball_x -= 10;
-                        break;
-
-                    case 38:   
-                        console.log('UP')
-                        ball_y -= 10;
-                        break;
-                
-                    case 39:   
-                        console.log('RIGHT');
-                        ball_x += 10;
-                        break;
-                    
-                    case 40:    
-                        console.log('DOWN')
-                        ball_y += 10;
-                        break;
-                    
-                    default:
-                        break;
-                }
-
-                console.log(`${ball_x}px`);
-                ball.style.left = `${ball_x}px`;
-                ball.style.top = `${ball_y}px`;
-            })
-        }
-
-
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
