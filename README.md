@@ -46,6 +46,12 @@ This repo is intended for my students for quick-reference. All the daily session
 ##### React
 - [19-Sep-React-1-Intro] 
 - [20-Sep-React-2-Components-Concept]
+- [26-Sep-React-3-Virtual-DOM-Fragments-React-Basics]
+- [Sep-27-React-4-Basic-App-From-Scratch]
+- [28-Sep-React-Assignment-1]]
+- [6-Oct-React-Part-5-Hooks-And-State-Variables-In-React]
+- [7-Oct-React-Part-6-Portals-Fragments-useEffect]
+- [14-Oct-React-Part-7-Rendering-Stateful-List]
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
@@ -81,5 +87,11 @@ This repo is intended for my students for quick-reference. All the daily session
  [13-Sep-JS-Projects]: https://github.com/NeetishRaj/dreamers_batch/tree/13-Sep-JS-Projects
  [19-Sep-React-1-Intro]: https://github.com/NeetishRaj/dreamers_batch/tree/19-Sep-React-1-Intro 
  [20-Sep-React-2-Components-Concept]: https://github.com/NeetishRaj/dreamers_batch/tree/20-Sep-React-2-Components-Concept
+ [26-Sep-React-3-Virtual-DOM-Fragments-React-Basics]: https://github.com/NeetishRaj/dreamers_batch/tree/26-Sep-React-3-Virtual-DOM-Fragments-React-Basics
+  [Sep-27-React-4-Basic-App-From-Scratch]: https://github.com/NeetishRaj/dreamers_batch/tree/Sep-27-React-4-Basic-App-From-Scratch
+  [28-Sep-React-Assignment-1]: https://github.com/NeetishRaj/dreamers_batch/tree/28-Sep-React-Assignment-1
+  [6-Oct-React-Part-5-Hooks-And-State-Variables-In-React]: https://github.com/NeetishRaj/dreamers_batch/tree/6-Oct-React-Part-5-Hooks-And-State-Variables-In-React
+  [7-Oct-React-Part-6-Portals-Fragments-useEffect]: https://github.com/NeetishRaj/dreamers_batch/tree/7-Oct-React-Part-6-Portals-Fragments-useEffect
+  [14-Oct-React-Part-7-Rendering-Stateful-List]: https://github.com/NeetishRaj/dreamers_batch/tree/14-Oct-React-Part-7-Rendering-Stateful-List
  
 
