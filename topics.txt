@@ -1,0 +1,14 @@
+React Part 7: Rendering Stateful Lists
+######################################
+
+
+Stateful List
+    - It's just and array of some data that we are storing in the state variable
+
+    - We then render some components based on that list.
+
+Benefit of stateful list
+
+    - Easy search (filtering)
+
+    - Sorting
