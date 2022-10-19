@@ -1,0 +1,22 @@
+.container {
+  text-align: center;
+}
+
+.input-field {
+  margin: 20px;
+  padding: 5px;
+}
+
+.error {
+  outline: 2px solid red;
+}
+
+.correct {
+  outline: 2px solid green;
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}

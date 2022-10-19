@@ -1,0 +1,22 @@
+React Part 8: working with forms in React
+#########################################
+
+Refernce links for React forms: https://reactjs.org/docs/forms.html
+
+Form related terms in React
+
+
+
+
+Focus and Validation in Input fields
+
+
+Important Notes
+###############
+
+
+Q. What is 2-way binding and how to implement it in React?
+
+A. 2-way binding happens when view and model are coupled together. Changing either of them updates the other.
+    
+Code example: Refer the name input field in <App /> component in simple-form react project
