@@ -1,0 +1,51 @@
+React Part 9: Function Vs Class components
+##########################################
+
+Class Components
+    - We create components using class syntax
+
+
+Lifecycle methods
+    - Reference: https://reactjs.org/docs/react-component.html
+    - These are the methods covering the life stages of a component.
+    - We use them to do certain operations inside component
+
+        for example-
+            constructor
+                - global variables initialization
+            componentDidMount
+                - used for fetching some data
+            componentWillUnmount
+                - cleanup before component is destroyed
+            
+
+Differences between Function vs Class Components
+
+    Class Components                    Function Components
+    ################                    ###################
+
+    - Class syntax                      - function syntax
+    - this.state is used to             - useState() hook is used
+        maintain state
+    - We have to do binding of          - No binding is required in most cases
+        methods
+    - We use Lifecycle methods          - Use use Hooks like useEffect()
+        like componentDidMount,
+        componentDidUpdate, etc
+
+
+
+Important Points
+################
+
+
+Q. How are the functional components used in newer versions of React?
+
+A. 
+    Before Hooks
+        - Class components were used as stateful components
+        - Function components were used as functional components
+    
+    After Hooks
+        - Class components discouraged
+        - Function components are used as both stateful/functional components using Hooks.

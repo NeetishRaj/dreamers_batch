@@ -1,0 +1,24 @@
+.App {
+  height: 100vh;
+  background-color: aquamarine;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.counter-container {
+  width: 70vw;
+  height: 40vh;
+
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+
+}
