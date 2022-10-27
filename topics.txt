@@ -1,0 +1,59 @@
+Part 9: Routing in React
+########################
+
+
+-    In routing our basic task as React developers is just to connect
+    the routes with their coresponding components.
+
+-   Reference for React Router 
+        -https://reactrouter.com/en/main
+
+
+- How to setup routing in your React project?
+    After the app is already created. Do
+
+    npm install --save react-router-dom
+
+
+Important Notes
+###############
+
+Q. How to add routing to my existing react project?
+
+A. These are the steps
+
+    1. Install "react-router-dom" package.
+        npm install react-router-dom
+
+    2. Wrap the complete <App> component with BrowserRouter component
+        import { BrowserRouter } from "react-router-dom";
+
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+
+    3. Specify all the routes and connect them with their corresponding components
+
+        <Routes>
+            <Route path="/">
+                <Route index element={<HomePage />} />
+
+                <Route path="about" element={<AboutUsPage />} />
+
+                <Route path="*" element={<PageNotFound />}/>
+            </Route>
+        </Routes> 
+
+    4. [Optional]: Specify the outlet where the routed components will be rendered
+
+        <Outlet />
+
+    5. Now we can use the <Link> to create links to our React routes
+
+        import { Link } from "react-router-dom";
+
+        <nav>
+            <Link to="/"><div>Home</div></Link>
+            <Link to="/about"><div>About Us</div></Link>
+            <Link to="/contact"><div>Contact Us</div></Link>
+        </nav>
