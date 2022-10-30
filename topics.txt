@@ -1,0 +1,23 @@
+JS Doubt topics Revision
+########################
+
+Hoisting
+
+Closures
+
+OOP in JS
+    Class
+    Inheritance and Super
+    Constructor
+
+Async code in JS
+    callback
+    Promise
+    async/await
+    Generators
+    
+Protoypes
+
+DOM Manipulation
+
+JSON
