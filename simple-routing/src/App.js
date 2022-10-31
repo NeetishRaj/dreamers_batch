@@ -9,10 +9,13 @@ import ContactUsPage from './components/ContactUsPage';
 import AboutUsPage from './components/AboutUsPage';
 import PageNotFound from './components/PagerNotFound';
 import Nitin from './components/Nitin';
+import Layout from './components/Layout';
+import SearchComponent from './components/SearchComponent';
 
 function App() {
   return (
     <Router>
+      <Layout />
 
       <Routes>
         <Route path="/">
@@ -20,9 +23,11 @@ function App() {
 
           <Route path="about" element={<AboutUsPage />} />
           
-          <Route path="contact" element={<ContactUsPage />} >
-            <Route path="nitin" element={<Nitin />}/>
-          </Route>
+          <Route path="contact" element={<ContactUsPage />} />
+
+          <Route path="contact/nitin" element={<Nitin />}/>
+
+          <Route path="search" element={<SearchComponent />} />
 
           <Route path="*" element={<PageNotFound />}/>
         </Route>

@@ -1,10 +1,13 @@
 import React from 'react';
-import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 function ContactUsPage() {
     return (<div>
-        <Navbar />
         This is the Contact Us page
+
+        <ul>
+            <li> <Link to="/contact/nitin">Contact Nitin</Link> </li>
+        </ul>
     </div>);
 }
 
