@@ -13,10 +13,32 @@ Part 9: Routing in React
         Example: /contact/nitin
 
 -   Query Parameters
-        Example: https://google.com/?q=anything  (here 'q' is a query parameter)
+        In any URL anythin after '?' is considered a query parameter.
+        They are separated by '&'
+
+
+        Example:-
+            https://abc.com?<query params>
+
+            https://abc.com?id=1234&token=aksfjwerwer23452
+            Here 'id' and 'token' are query parameters
+
 
 -   Route Parameters
+    
+        In Route parameter the varaible is within '/' 
 
+        https://abc.com/accounts/{route paramter}
+
+        Reference: https://reactrouter.com/en/main/hooks/use-params
+
+        Examples:-
+
+            https://abc.com/accounts/2345
+                This will open profile for person with id 2345
+                
+            https://abc.com/accounts/5678
+                This will open profile for person with id 5678
 
 
 
@@ -67,3 +89,20 @@ A. These are the steps
             <Link to="/about"><div>About Us</div></Link>
             <Link to="/contact"><div>Contact Us</div></Link>
         </nav>
+
+
+Q. What's the difference between Route parameters and Query parameters?
+
+A. 
+    Route Parameters
+        - It comes before '?' and between the '/' 
+
+    Query Parameters
+        - It comes after the '?' and separated by '&'
+
+
+    Example with both route & query params:-
+        https://bank.com/{region}/person/{pesonId}?loggedin=yes&id=5678
+        Here 
+            region & personId   -> Route parameters
+            loggedin & id       -> Query Parameters

@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  useParams
 } from "react-router-dom";
 import HomePage from './components/HomePage';
 import ContactUsPage from './components/ContactUsPage';
@@ -11,8 +12,12 @@ import PageNotFound from './components/PagerNotFound';
 import Nitin from './components/Nitin';
 import Layout from './components/Layout';
 import SearchComponent from './components/SearchComponent';
+import AccountProfile from './components/AccountProfile';
 
 function App() {
+
+  let { accountName } = useParams();
+
   return (
     <Router>
       <Layout />
@@ -26,6 +31,8 @@ function App() {
           <Route path="contact" element={<ContactUsPage />} />
 
           <Route path="contact/nitin" element={<Nitin />}/>
+
+          <Route path="accounts/:accountName" element={<AccountProfile />} />
 
           <Route path="search" element={<SearchComponent />} />
 

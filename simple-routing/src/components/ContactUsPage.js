@@ -7,6 +7,7 @@ function ContactUsPage() {
 
         <ul>
             <li> <Link to="/contact/nitin">Contact Nitin</Link> </li>
+            <li> <Link to="/contact/nitin?loggedin=yes">Contact Nitin (Logged In)</Link> </li>
         </ul>
     </div>);
 }

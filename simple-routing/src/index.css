@@ -27,3 +27,29 @@ input {
   align-items: center;
   flex-direction: column;
 }
+
+.contact-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  height: 100%;
+}
+
+.contact-card > a {
+  width: 300px;
+  height: 200px;
+
+  /* border: 2px solid #000; */
+
+  background-color: blanchedalmond;
+  box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+
+  flex-shrink: 0;
+  margin: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
