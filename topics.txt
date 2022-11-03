@@ -1,3 +1,23 @@
 Part 10: GET, POST, PUT, DELETE operations in React
 ###################################################
 
+CRUD
+
+    C - Create (HTTPS POST method)
+
+    R - Read (HTTP GET method)
+
+    U - Update (HTTP PUT method)
+
+    D - Delete (HTTP DELETE method)
+
+
+Setup a simple HTTP Server with json-server
+
+    - npm install -g json-server
+    - Create a server folder
+    - create a db.json file with initial data.
+    - run `json-server --watch db.json`
+
+
+Intall Postman and setup the CRUD requests for the resource in json-server
