@@ -1,0 +1,15 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment"
+    },
+    {
+      "body": "2023 is coming soon!",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

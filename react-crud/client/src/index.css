@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(blue, darkblue);
+
+  width: 100vw;
+  height: 100vh;
+
+  color: yellow;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1{
+  color:  orange;
+  width: 80vw;
+  border: 10px solid orange;
+  padding: 20px;
+
+  border-radius: 0 30px 0 30px;
+}
+
+.comments-box > div, .comment-input > input {
+  width: 80vw;
+  
+  margin-top: 30px;
+  padding: 10px;
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+
+.comments-box > div {
+  /* display: flex;
+  justify-content: flex-end; */
+
+  position: relative;
+}
+
+.comment-options-button {
+  position: absolute;
+  right: 5px;
+  top: 0;
+
+  height: 100%;
+  width: 25px;
+
+  cursor: pointer;
+  background-color: rgba(200, 200, 200, 0.3);
+}
+
+.comment-options-button:hover {
+  background-color: rgba(200, 200, 200, 0.7);
+}
+
+.comment-options-dialog {
+  background-color: rgba(240, 240, 240, 0.8);
+
+  color: black;
+
+  width: 80px;
+  height: 70px;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  position: absolute;
+  right: 50px;
+  top: 0;
+
+  /* display: none; */
+}
+
+.comment-options-dialog > div {
+  height: 50%;
+  width: 100%;
+
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+.comment-options-dialog > div:hover {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.comment-options-dialog > div:nth-child(1) {
+  border-bottom: 1px solid black;
+}
