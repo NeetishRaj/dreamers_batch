@@ -46,6 +46,10 @@ This repo is intended for my students for quick-reference. All the daily session
 ##### React
 - [19-Sep-React-1-Intro] 
 - [20-Sep-React-2-Components-Concept]
+- [Oct-26-React-Part-9-Function-Vs-Class-Components]
+- [Oct-27-Part-9-React-Routers]
+- [Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM]
+- [Nov-3-React-Part-10-Post-Requests-In-React]
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
@@ -81,5 +85,9 @@ This repo is intended for my students for quick-reference. All the daily session
  [13-Sep-JS-Projects]: https://github.com/NeetishRaj/dreamers_batch/tree/13-Sep-JS-Projects
  [19-Sep-React-1-Intro]: https://github.com/NeetishRaj/dreamers_batch/tree/19-Sep-React-1-Intro 
  [20-Sep-React-2-Components-Concept]: https://github.com/NeetishRaj/dreamers_batch/tree/20-Sep-React-2-Components-Concept
+ [Oct-26-React-Part-9-Function-Vs-Class-Components]: https://github.com/NeetishRaj/dreamers_batch/tree/Oct-26-React-Part-9-Function-Vs-Class-Components
+ [Oct-27-Part-9-React-Routers]: https://github.com/NeetishRaj/dreamers_batch/tree/Oct-27-Part-9-React-Routers
+ [Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM]: https://github.com/NeetishRaj/dreamers_batch/tree/Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM
+ [Nov-3-React-Part-10-Post-Requests-In-React]: https://github.com/NeetishRaj/dreamers_batch/tree/Nov-3-React-Part-10-Post-Requests-In-React
  
 
