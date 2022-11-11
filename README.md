@@ -89,19 +89,17 @@ This repo is intended for my students for quick-reference. All the daily session
   [31-Aug-Part-16-ES6]: <https://github.com/NeetishRaj/dreamers_batch/tree/31-Aug-Part-16-ES6>
   [2-Sep-JS-Part-17-ES6-Continued-Class]: <https://github.com/NeetishRaj/dreamers_batch/tree/2-Sep-JS-Part-17-ES6-Continued-Class>
   [6-Sep-Advanced-JS-Part-1]: <https://github.com/NeetishRaj/dreamers_batch/tree/6-Sep-Advanced-JS-Part-1>
-<<<<<<< HEAD
- [8-Sep-Advanced-JS-Part-2]: https://github.com/NeetishRaj/dreamers_batch/tree/8-Sep-Advanced-JS-Part-2
+  [8-Sep-Advanced-JS-Part-2]: https://github.com/NeetishRaj/dreamers_batch/tree/8-Sep-Advanced-JS-Part-2
  [13-Sep-JS-Projects]: https://github.com/NeetishRaj/dreamers_batch/tree/13-Sep-JS-Projects
  [19-Sep-React-1-Intro]: https://github.com/NeetishRaj/dreamers_batch/tree/19-Sep-React-1-Intro 
  [20-Sep-React-2-Components-Concept]: https://github.com/NeetishRaj/dreamers_batch/tree/20-Sep-React-2-Components-Concept
  [26-Sep-React-3-Virtual-DOM-Fragments-React-Basics]: https://github.com/NeetishRaj/dreamers_batch/tree/26-Sep-React-3-Virtual-DOM-Fragments-React-Basics
-=======
-  [8-Sep-Advanced-JS-Part-2]: https://github.com/NeetishRaj/dreamers_batch/tree/8-Sep-Advanced-JS-Part-2
+ [8-Sep-Advanced-JS-Part-2]: https://github.com/NeetishRaj/dreamers_batch/tree/8-Sep-Advanced-JS-Part-2
   [13-Sep-JS-Projects]: https://github.com/NeetishRaj/dreamers_batch/tree/13-Sep-JS-Projects
   [19-Sep-React-1-Intro]: https://github.com/NeetishRaj/dreamers_batch/tree/19-Sep-React-1-Intro 
   [20-Sep-React-2-Components-Concept]: https://github.com/NeetishRaj/dreamers_batch/tree/20-Sep-React-2-Components-Concept
   [26-Sep-React-3-Virtual-DOM-Fragments-React-Basics]: https://github.com/NeetishRaj/dreamers_batch/tree/26-Sep-React-3-Virtual-DOM-Fragments-React-Basics
->>>>>>> a597238cec67b488f2a93a9c1c2f92afcdbac99f
+
   [Sep-27-React-4-Basic-App-From-Scratch]: https://github.com/NeetishRaj/dreamers_batch/tree/Sep-27-React-4-Basic-App-From-Scratch
   [28-Sep-React-Assignment-1]: https://github.com/NeetishRaj/dreamers_batch/tree/28-Sep-React-Assignment-1
   [6-Oct-React-Part-5-Hooks-And-State-Variables-In-React]: https://github.com/NeetishRaj/dreamers_batch/tree/6-Oct-React-Part-5-Hooks-And-State-Variables-In-React
