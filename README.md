@@ -30,6 +30,7 @@ This repo is intended for my students for quick-reference. All the daily session
 - [1-Aug-JS-Part-6-Arrays]
 - [4-Aug-JS-Part-7-Objects]
 - [5-Aug-JS-Part-8-Prototype-Inheritance-OOPS]
+- [10-Aug-JS-Part-9-Math-String-Date]
 - [17-Aug-JS-Part-10-BOM]
 - [18-Aug-JS-Part-11-DOM-Basics-And-Selectors]
 - [19-Aug-JS-Part-12-DOM-Events]
@@ -48,10 +49,15 @@ This repo is intended for my students for quick-reference. All the daily session
 - [20-Sep-React-2-Components-Concept]
 - [26-Sep-React-3-Virtual-DOM-Fragments-React-Basics]
 - [Sep-27-React-4-Basic-App-From-Scratch]
-- [28-Sep-React-Assignment-1]]
+- [28-Sep-React-Assignment-1]
 - [6-Oct-React-Part-5-Hooks-And-State-Variables-In-React]
 - [7-Oct-React-Part-6-Portals-Fragments-useEffect]
 - [14-Oct-React-Part-7-Rendering-Stateful-List]
+- [Oct-19-React-Part-8-Working-With-Forms]
+- [Oct-26-React-Part-9-Function-Vs-Class-Components]
+- [Oct-27-Part-9-React-Routers]
+- [Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM]
+- [Nov-3-React-Part-10-Post-Requests-In-React]
 
 [//]: #
    [7-Jul-CSS-Part-1-Box-Model-Display-Position]: <https://github.com/NeetishRaj/dreamers_batch/tree/7-Jul-CSS-Part-1-Box-Model-Display-Position>
@@ -93,5 +99,9 @@ This repo is intended for my students for quick-reference. All the daily session
   [6-Oct-React-Part-5-Hooks-And-State-Variables-In-React]: https://github.com/NeetishRaj/dreamers_batch/tree/6-Oct-React-Part-5-Hooks-And-State-Variables-In-React
   [7-Oct-React-Part-6-Portals-Fragments-useEffect]: https://github.com/NeetishRaj/dreamers_batch/tree/7-Oct-React-Part-6-Portals-Fragments-useEffect
   [14-Oct-React-Part-7-Rendering-Stateful-List]: https://github.com/NeetishRaj/dreamers_batch/tree/14-Oct-React-Part-7-Rendering-Stateful-List
- 
+  [Oct-19-React-Part-8-Working-With-Forms]: https://github.com/NeetishRaj/dreamers_batch/tree/Oct-19-React-Part-8-Working-With-Forms
+  [Oct-26-React-Part-9-Function-Vs-Class-Components]: https://github.com/NeetishRaj/dreamers_batch/tree/Oct-26-React-Part-9-Function-Vs-Class-Components
+  [Oct-27-Part-9-React-Routers]: https://github.com/NeetishRaj/dreamers_batch/tree/Oct-27-Part-9-React-Routers
+  [Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM]: https://github.com/NeetishRaj/dreamers_batch/tree/Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM
+  [Nov-3-React-Part-10-Post-Requests-In-React]: https://github.com/NeetishRaj/dreamers_batch/tree/Nov-3-React-Part-10-Post-Requests-In-React
 
