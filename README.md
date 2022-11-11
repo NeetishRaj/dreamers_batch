@@ -43,12 +43,12 @@ This repo is intended for my students for quick-reference. All the daily session
 - [6-Sep-Advanced-JS-Part-1]
 - [8-Sep-Advanced-JS-Part-2]
 - [13-Sep-JS-Projects]
+- [Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM]
 ##### React
 - [19-Sep-React-1-Intro] 
 - [20-Sep-React-2-Components-Concept]
 - [Oct-26-React-Part-9-Function-Vs-Class-Components]
 - [Oct-27-Part-9-React-Routers]
-- [Oct-30-JS-Doubt-Session-Async-Closure-Prototypes-DOM]
 - [Nov-3-React-Part-10-Post-Requests-In-React]
 
 [//]: #
